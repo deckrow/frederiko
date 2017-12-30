@@ -1,0 +1,320 @@
+// settings ------------------------------------------------------------------------------------------------------------
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    font-weight: inherit
+    font-style: inherit
+    font-size: 14px
+    font-family: inherit
+    vertical-align: top
+    background: transparent
+    font: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif
+
+html
+    font-size: 100%
+
+body
+    margin: 0
+    padding: 0
+    font-family: Maryad Pro, sans-serif
+
+*
+    margin: 0
+    padding: 0
+    outline:  none
+
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+a
+    color: #fff
+    font: 14px Maryad Pro, sans-serif
+    &:hover
+        text-decoration: none
+        background: none
+    &:active, &:hover
+        outline: 0
+
+img
+    border: none
+    vertical-align: middle
+
+
+.clearfix
+    &:before, &:after
+        content: " "
+        display: table
+    &:after
+        clear: both
+
+#wrapper
+    position: relative
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.box
+    padding: 63px 0 69px
+
+.big-title
+    font-size: 31px
+    color: #000e20
+    &:before
+        content: '\2014'
+        position: relative
+        margin: 0 35px 0 26px
+// settings end --------------------------------------------------------------------------------------------------------
+
+// header --------------------------------------------------------------------------------------------------------------
+.header
+    position: absolute
+    top: 25px
+    left: 0
+    right: 0
+    .logo
+        float: left
+    .nav
+        float: left
+    .contact
+        float: right
+
+.logo
+    &-img
+        margin-right: 10px
+        float: left
+    &-info
+        float: left
+        &__link
+            text-decoration: none
+            color: #00a3fb
+            font-size: 29px
+        &__text
+            color: #ffffff
+            font-size: 11px
+            font-weight: 400
+            line-height: 14px
+            padding-left: 2px
+            font-style: italic
+
+.nav
+    width: 741px
+    height: 51px
+    list-style: none
+    text-align: center
+    &__item
+        display: inline-block
+        margin-right: 41px
+    &__item.active .nav__link
+        color: #fcc936
+    &__item:last-child
+        margin-right: 0
+    &__link
+        text-decoration: none
+        line-height: 51px
+        font-size: 13px
+
+.contact
+    text-align: center
+    &__workdays
+        font-size: 11px
+        color: #fff
+        opacity: 0.5
+    &__number
+        font-size: 19px
+        font-weight: 700
+        color: #fff
+        letter-spacing: 0.4px
+    &__call
+        display: inline-block
+        margin-top: 4px
+        font-size: 15px
+        color: #fcc936
+        border: none
+        border-bottom: 1px dotted #fcc936
+        background: transparent
+        cursor: pointer
+
+sup
+    font-size: 8px
+// header end ----------------------------------------------------------------------------------------------------------
+
+// home ----------------------------------------------------------------------------------------------------------------
+.home
+    min-height: 908px
+    background: url(../img/home-bg.jpg) no-repeat center center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    &-title
+        padding-top: 158px
+    &-form
+        margin: 93px auto 0
+
+.home-title
+    text-align: center
+    color: #ffffff
+    font-family: "Lato Semibold"
+    font-size: 72px
+    font-weight: 700
+    line-height: 72px
+    .gold
+        color: #fcc936
+        font-size: 72px
+        font-weight: 700
+        line-height: 72px
+
+.home-form
+    width: 555px
+    height: 345px
+    background: #ffffff
+    padding: 30px 42px 36px
+    &__title
+        color: #000e20
+        font-family: "Lato Semibold"
+        font-size: 24px
+    .caption
+        font-size: 15px
+        font-weight: bold
+        color: #000e20
+    .choice
+        display: flex
+        padding-top: 22px
+        &__tranparency
+            flex: 1
+            padding-left: 5px
+        &__type
+            flex: 1
+            padding-left: 5px
+        .caption
+            padding-bottom: 16px
+    .area
+        margin-top: 21px
+        padding-left: 4px
+        .caption
+            float: left
+            line-height: 36px
+        &__input
+            float: left
+            width: 162px
+            height: 36px
+            border-radius: 3px
+            border: 1px solid #e0e5ef
+            margin-left: 19px
+            input[type=text]
+                height: 100%
+                width: 80px
+                border: none
+                font-size: 18px
+                text-align: center
+
+.label
+    display: inline-block
+    cursor: pointer
+    position: relative
+    margin-left: 34px
+    font-size: 13px
+    margin-bottom: 6px
+    line-height: 22px
+.label:before
+    content: ''
+    display: inline-block
+    width: 20px
+    height: 20px
+    position: absolute
+    left: -32px
+    background: #fff
+    border: 1px solid #e0e5ef
+    border-radius: 50%
+    box-shadow: 3px 4px 15px 1px rgba(0, 14, 32, 0.1)
+
+.radio
+    display: none
+.radio:checked + label:before
+    content: "\2022"
+    color: #000e20
+    font-size: 50px
+    text-align: center
+    line-height: 20px
+
+.minus, .plus
+    display: inline-block
+    text-align: center
+    font-size: 33px
+    line-height: 30px
+    color: #fff
+    width: 36px
+    height: 100%
+    border: 1px solid #e0e5ef
+    background-color: #e0e5ef
+    cursor: pointer
+
+.btn
+    width: 195px
+    height: 50px
+    box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
+    border-radius: 25px
+    background-color: #fcc936
+    font-size: 18px
+    color: #000e20
+    padding: 16px 56px 20px
+    border: none
+    margin: 30px auto 0
+    display: block
+    cursor: pointer
+// home end ------------------------------------------------------------------------------------------------------------
+
+// advatages -----------------------------------------------------------------------------------------------------------
+.advantages
+    .big-title
+        padding-bottom: 56px
+    .all-advantages
+        .box-advantages
+            padding-bottom: 68px
+
+.box-advantages
+    display: flex
+    justify-content: space-between
+    .info-box
+        flex-basis: 260px
+        &__title
+            display: flex
+            min-height: 60px
+            .title
+                flex-basis: 200px
+            .img
+                flex-basis: 30px
+                margin-right: 30px
+        &__title.bug
+            height: 60px
+            .img
+                position: relative
+                top: -18px
+        &__text
+            p
+                line-height: 20px
+
+.title .bold
+    font-weight: bold
+    line-height: 20px
+    padding-top: 8px
+
+.img.bug
+    position: relative
+    top: -18px
+
+
+// advatages end -------------------------------------------------------------------------------------------------------
+
+
