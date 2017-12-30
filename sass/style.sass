@@ -1,4 +1,6 @@
 // settings ------------------------------------------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i')
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,7 +27,7 @@ html
 body
     margin: 0
     padding: 0
-    font-family: Maryad Pro, sans-serif
+    font-family: 'Roboto', sans-serif
 
 *
     margin: 0
@@ -38,7 +40,7 @@ body
 
 a
     color: #fff
-    font: 14px Maryad Pro, sans-serif
+    font-family: 'Roboto', sans-serif
     &:hover
         text-decoration: none
         background: none
@@ -99,6 +101,7 @@ img
             text-decoration: none
             color: #00a3fb
             font-size: 29px
+            letter-spacing: -1px
         &__text
             color: #ffffff
             font-size: 11px
@@ -134,7 +137,7 @@ img
         font-size: 19px
         font-weight: 700
         color: #fff
-        letter-spacing: 0.4px
+        line-height: 16px
     &__call
         display: inline-block
         margin-top: 4px
@@ -165,24 +168,22 @@ sup
 .home-title
     text-align: center
     color: #ffffff
-    font-family: "Lato Semibold"
     font-size: 72px
-    font-weight: 700
+    font-weight: 600
     line-height: 72px
     .gold
         color: #fcc936
         font-size: 72px
-        font-weight: 700
+        font-weight: 600
         line-height: 72px
 
 .home-form
     width: 555px
     height: 345px
     background: #ffffff
-    padding: 30px 42px 36px
+    padding: 30px 42px 0
     &__title
         color: #000e20
-        font-family: "Lato Semibold"
         font-size: 24px
     .caption
         font-size: 15px
@@ -207,7 +208,7 @@ sup
             line-height: 36px
         &__input
             float: left
-            width: 162px
+            width: 163px
             height: 36px
             border-radius: 3px
             border: 1px solid #e0e5ef
@@ -244,9 +245,8 @@ sup
 .radio:checked + label:before
     content: "\2022"
     color: #000e20
-    font-size: 50px
-    text-align: center
-    line-height: 20px
+    font-size: 65px
+    line-height: 24px
 
 .minus, .plus
     display: inline-block
@@ -254,11 +254,17 @@ sup
     font-size: 33px
     line-height: 30px
     color: #fff
-    width: 36px
+    width: 37px
     height: 100%
     border: 1px solid #e0e5ef
     background-color: #e0e5ef
     cursor: pointer
+
+.minus
+    float: left
+
+.plus
+    float: right
 
 .btn
     width: 195px
@@ -268,20 +274,21 @@ sup
     background-color: #fcc936
     font-size: 18px
     color: #000e20
-    padding: 16px 56px 20px
     border: none
     margin: 30px auto 0
     display: block
     cursor: pointer
 // home end ------------------------------------------------------------------------------------------------------------
 
-// advatages -----------------------------------------------------------------------------------------------------------
+// advantages -----------------------------------------------------------------------------------------------------------
 .advantages
     .big-title
         padding-bottom: 56px
     .all-advantages
         .box-advantages
             padding-bottom: 68px
+        .box-advantages:last-child
+            padding-bottom: 0
 
 .box-advantages
     display: flex
@@ -290,20 +297,18 @@ sup
         flex-basis: 260px
         &__title
             display: flex
-            min-height: 60px
             .title
                 flex-basis: 200px
             .img
                 flex-basis: 30px
                 margin-right: 30px
-        &__title.bug
-            height: 60px
-            .img
-                position: relative
-                top: -18px
+                min-height: 67px
         &__text
+            position: relative
+            top: -5px
             p
                 line-height: 20px
+
 
 .title .bold
     font-weight: bold
@@ -313,8 +318,212 @@ sup
 .img.bug
     position: relative
     top: -18px
+// advantages end -------------------------------------------------------------------------------------------------------
+
+// works ---------------------------------------------------------------------------------------------------------------
+.works
+    position: relative
+    .big-title
+        color: #ffffff
+        padding-bottom: 43px
+    .container
+        background-color: #005dbb
+        max-height: 558px
+    .slider
+        padding: 0 80px 0
+
+.slide
+    display: flex
+    justify-content: space-between
+    float: left
+    &-img
+        flex-basis: 460px
+        height: 515px
+        padding-left: 8px
+        img
+            box-shadow: 4px 6px 35px rgba(0, 93, 187, 0.36)
+    &-info
+        flex-basis: 475px
+        &__block
+            display: flex
+            justify-content: space-between
+            padding: 5px 0
+            border-bottom: 1px solid #0082d6
+        &__title
+            flex-basis: 36%
+            padding-left: 8px
+            p
+                font-size: 16px
+                font-weight: bold
+                color: #fff
+            p.price
+                line-height: 40px
+        &__description
+            flex-basis: 63%
+            p
+                font-size: 16px
+                color: #fff
+                line-height: 20px
+            p.big-price
+                font-size: 34px
+                line-height: 40px
+                font-weight: bold
+            span.small-price
+                position: relative
+                top: 4px
+                font-size: 16px
+        &__btn
+            font-size: 17px
+            color: #000e20
+            padding: 15px 40px
+            margin-top: 16px
+            box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
+            border-radius: 25px
+            background-color: #fcc936
+            cursor: pointer
+            border: none
+
+.slider-switch
+    position: absolute
+    bottom: -81px
+    left: calc(50% + 15px)
+    display: flex
+    .btn-prev-next
+        width: 98px
+        height: 50px
+        border: 2px solid #005dbb
+        display: flex
+        img
+            position: relative
+            top: calc(50% - 15px)
+            left: calc(50% - 8px)
+        .switcher-btn.prev
+            height: 100%
+            flex: 1
+            border-right: 2px solid #005dbb
+            background: #005dbb
+            cursor: pointer
+        .switcher-btn.next
+            height: 100%
+            cursor: pointer
+            flex: 1
+    .current-count
+        line-height: 50px
+        margin-left: 25px
+        p, span.current, span.count
+            font-size: 29px
+            font-style: italic
+            color: #005dbb
+
+.slick-list
+    overflow: hidden
+.slick-prev
+    position: absolute
+    bottom: -81px
+    left: calc(50% + 15px)
+    z-index: 11111
+    width: 50px
+    height: 50px
+    opacity: 0
+    cursor: pointer
+
+.slick-next
+    position: absolute
+    bottom: -81px
+    left: calc(50% + 65px)
+    z-index: 11111
+    width: 50px
+    height: 50px
+    opacity: 0
+    cursor: pointer
+// works end -----------------------------------------------------------------------------------------------------------
+
+// rates ---------------------------------------------------------------------------------------------------------------
+.rates
+    &.box
+        padding-top: 210px
+    .big-title
+        padding-bottom: 49px
+
+.rates-info
+    display: flex
+    justify-content: space-between
+    &__left, &__right
+        flex-basis: 555px
+        padding: 40px 68px 62px 98px
+        border: 2px solid #005dbb
+        text-align: center
+    &__left
+        background: #ffffff
+    &__right
+        background: #005dbb
+
+.rates-title
+    font-size: 31px
+    padding-bottom: 17px
+
+.rates-title.white
+    color: #fff
+
+.rates-list
+    list-style: none
+    margin-bottom: 20px
+    text-align: left
+    &__item
+        position: relative
+        margin-bottom: 10px
+    &__item:before
+        content: "—"
+        color: #005dbb
+        font-size: 16px
+        position: absolute
+        left: -33px
+    &__item:last-child
+        margin-bottom: 0
+    &__text
+        font-size: 16px
+
+.rates-list.white
+    & .rates-list__text
+        color: #fff
+    & .rates-list__item:before
+        color: #fff
 
 
-// advatages end -------------------------------------------------------------------------------------------------------
+.rates-price
+    margin-bottom: 8px
+    .price-text
+        font-size: 18px
+        font-weight: 500
+        color: #005dbb
+        line-height: 41px
+    .price-sum
+        font-size: 34px
+        font-weight: 500
+        color: #005dbb
+        padding-left: 10px
+        sub
+            position: relative
+            bottom: -15px
+            font-size: 18px
+            left: -7px
+
+.rates-price.white
+    & .price-text
+        color: #ffffff
+    & .price-sum
+        color: #fff
+
+.rates-btn
+    font-size: 17px
+    color: #000e20
+    padding: 15px 40px
+    box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
+    border-radius: 25px
+    background-color: #fcc936
+    cursor: pointer
+    border: none
 
 
+
+// rates end -----------------------------------------------------------------------------------------------------------

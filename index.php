@@ -75,13 +75,13 @@
                     </div>
                     <div class="area clearfix">
                         <span class="caption">Площадь душевой кабины:</span>
-                        <div class="area__input">
+                        <div class="area__input clearfix">
                             <span class="minus">-</span>
                             <input type="text" value="1,0 м">
                             <span class="plus">+</span>
                         </div>
                     </div>
-                    <button class="btn">Расчитать</button>
+                    <button class="btn">Рассчитать</button>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                         <div class="info-box">
                             <div class="info-box__title">
                                 <div class="img"><img src="img/adv3.png" alt="adv"></div>
-                                <div class="title"><p class="bold">Срок изготовления 7 рабочих дней</p></div>
+                                <div class="title"><p class="bold">Срок изготовления <br> 7 рабочих дней</p></div>
                             </div>
                             <div class="info-box__text">
                                 <p>Если не успеем — стекло бесплатно.</p>
@@ -154,6 +154,181 @@
             </div>
         </div>
         <!-- advantages end -->
+
+        <!-- works -->
+        <div class="works">
+            <div class="container box">
+                <h2 class="big-title">Наши работы</h2>
+                <div class="slider clearfix">
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="img/img-slider.png" alt="img-slider">
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Состав</p></div>
+                                <div class="slide-info__description"><p>1 дверь (2000*800)</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Материал</p></div>
+                                <div class="slide-info__description"><p>Стекло AGC (Бельгия) 8 мм,  еврокромка, закаленное</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Тип двери</p></div>
+                                <div class="slide-info__description"><p>Распашная</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Фурнитура</p></div>
+                                <div class="slide-info__description"><p>Петли, коннекторы, штанга +  держатели, ручка-кноб, уплотнитель.</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Срок выполнения</p></div>
+                                <div class="slide-info__description"><p>5 дней</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p class="price">Стоимость от</p></div>
+                                <div class="slide-info__description"><p class="big-price">5 500 <span class="small-price">руб.</span></p></div>
+                            </div>
+                            <button class="slide-info__btn">Хочу такое же</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="img/img-slider.png" alt="img-slider">
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Состав</p></div>
+                                <div class="slide-info__description"><p>1 дверь (2000*800)</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Материал</p></div>
+                                <div class="slide-info__description"><p>Стекло AGC (Бельгия) 8 мм,  еврокромка, закаленное</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Тип двери</p></div>
+                                <div class="slide-info__description"><p>Распашная</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Фурнитура</p></div>
+                                <div class="slide-info__description"><p>Петли, коннекторы, штанга +  держатели, ручка-кноб, уплотнитель.</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Срок выполнения</p></div>
+                                <div class="slide-info__description"><p>5 дней</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p class="price">Стоимость от</p></div>
+                                <div class="slide-info__description"><p class="big-price">15 500 <span class="small-price">руб.</span></p></div>
+                            </div>
+                            <button class="slide-info__btn">Хочу такое же</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="img/img-slider.png" alt="img-slider">
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Состав</p></div>
+                                <div class="slide-info__description"><p>1 дверь (2000*800)</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Материал</p></div>
+                                <div class="slide-info__description"><p>Стекло AGC (Бельгия) 8 мм,  еврокромка, закаленное</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Тип двери</p></div>
+                                <div class="slide-info__description"><p>Распашная</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Фурнитура</p></div>
+                                <div class="slide-info__description"><p>Петли, коннекторы, штанга +  держатели, ручка-кноб, уплотнитель.</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p>Срок выполнения</p></div>
+                                <div class="slide-info__description"><p>5 дней</p></div>
+                            </div>
+                            <div class="slide-info__block">
+                                <div class="slide-info__title"><p class="price">Стоимость от</p></div>
+                                <div class="slide-info__description"><p class="big-price">155 500 <span class="small-price">руб.</span></p></div>
+                            </div>
+                            <button class="slide-info__btn">Хочу такое же</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-switch">
+                    <div class="btn-prev-next">
+                        <div class="switcher-btn prev"><img src="img/arrow-left.png" alt="prev"></div>
+                        <div class="switcher-btn next"><img src="img/arrow-right.png" alt="next"></div>
+                    </div>
+                    <div class="current-count">
+                        <p><span class="current"></span>/<span class="count"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- works end -->
+
+        <!-- rates -->
+        <div class="rates box">
+            <div class="container">
+                <h2 class="big-title">Тарифы</h2>
+                <div class="rates-info">
+                    <div class="rates-info__left">
+                        <h3 class="rates-title">Каленое стекло</h3>
+                        <ul class="rates-list">
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Сверхпрочное, жаро и ударостойкое стекло</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Каленое стекло имеет зеленоватый оттенок, что искажает светлые тона и цветовые комбинации</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Цена каленого стекла немного ниже</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Оптимально для небольших пространств и цветных рисунков</p>
+                            </li>
+                        </ul>
+                        <div class="rates-price">
+                            <span class="price-text">Стоимость:</span>
+                            <span class="price-sum">14 300 <sub>руб.</sub></span>
+                        </div>
+                        <button class="rates-btn">Хочу такое же</button>
+                    </div>
+                    <div class="rates-info__right">
+                        <h3 class="rates-title white">Стекло Optiwhite</h3>
+                        <ul class="rates-list white">
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Сверхпрочное, жаро и ударостойкое стекло</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Стекло Optiwhite абсолютно прозрачное, точно передает любые особенности рисунка</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Цена стекла Optiwhite немного выше</p>
+                            </li>
+                            <li class="rates-list__item">
+                                <p class="rates-list__text">Подходит для больших площадей и черно-белых рисунков</p>
+                            </li>
+                        </ul>
+                        <div class="rates-price white">
+                            <span class="price-text">Стоимость:</span>
+                            <span class="price-sum">19 300 <sub>руб.</sub></span>
+                        </div>
+                        <button class="rates-btn">Хочу такое же</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- rates end -->
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+
     </div>
 
 </body>
