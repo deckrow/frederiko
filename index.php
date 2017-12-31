@@ -331,18 +331,75 @@
                 <h2 class="big-title">Дополнительная продукция</h2>
                 <div class="all-products">
                     <div class="all-products__block clearfix">
-                        <div class="all-products__img"><img src="img/content-bigimg.png" alt=""></div>
+                        <div class="all-products__img big"><img src="img/content-bigimg.png" alt=""></div>
+                        <div class="all-products__img">
+                            <img src="img/content-smallimg.png" alt="">
+                            <div class="img-hover">
+                                <p>Модульные картины из стекла</p>
+                                <button class="btn">Заказать замер</button>
+                            </div>
+                        </div>
+                        <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                    </div>
+                    <div class="all-products__block clearfix">
                         <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
                         <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                        <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                        <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                    </div>
+                    <div class="all-products__block clearfix">
+                        <div class="all-products__moreinfo">
+                            <p>Хотите узнать больше? <br>
+                            Оставьте заявку и мы свяжемся с вами.</p>
+                            <button class="btn">Узнать больше</button>
+                        </div>
+                        <div class="all-products__img right"><img src="img/content-bigimg.png" alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- additional product end -->
 
+        <!-- reviews -->
+        <div class="reviews box">
+            <div class="container">
+                <h2 class="big-title">Отзывы</h2>
+            </div>
+            <div class="reviews-slide">
+                <ul class="review-view clearfix">
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                    <li class="review-view__item">
+                        <p class="review-title">Светлана</p>
+                        <p class="review-text">Доброго времени суток! Хочу сказать команде Glasspower большое </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- reviews end -->
+
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="slick/slick.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
         <script src="js/script.js"></script>
 
     </div>

@@ -530,15 +530,75 @@ sup
 .products
     .big-title
         color: #ffffff
-        padding-bottom: 37px
-    .container
+        padding-bottom: 41px
+    .container.box
         background: #005dbb
+        padding: 56px 0 72px
 
 .all-products
+    padding: 0 93px 0 87px
     &__block
         margin-bottom: 10px
+    &__block:last-child
+        &.all-products__img
+            float: right
     &__img
         float: left
         margin-right: 9px
+        position: relative
+    &__img.big
+        margin-right: 11px
+    &__img.right
+        right: 2px
+        float: right
+    &__img:last-child
+        margin-right: 0
+    &__img:hover .img-hover
+        display: block
+        background: rgba(255, 255, 255, 0.85)
+    &__moreinfo
+        float: left
+        & p
+            color: #fff
+            font-size: 17px
+            font-weight: bold
+            padding-top: 52px
+            line-height: 35px
+        & button.btn
+            margin: 17px 0 0 0
 
+.img-hover
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    text-align: center
+    & p
+        font-size: 17px
+        font-weight: 500
+        padding-top: 59px
+    & button.btn
+        margin: 14px auto 0
 // add products end ----------------------------------------------------------------------------------------------------
+
+// reviews -------------------------------------------------------------------------------------------------------------
+.reviews
+    .big-title
+        padding-bottom: 48px
+    &-slide
+        margin-bottom: 33px
+        overflow-x: scroll
+
+
+.review-view
+    width: 10000px
+    list-style: none
+    &__item
+        float: left
+        width: 555px
+        margin-right: 29px
+        padding: 30px 48px 30px 31px
+        border: 2px solid #005dbb
+// reviews end -------------------------------------------------------------------------------------------------------------

@@ -164,8 +164,27 @@ sup { font-size: 8px; }
 
 .rates-btn { font-size: 17px; color: #000e20; margin-bottom: 62px; padding: 15px 40px; box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); border-radius: 25px; background-color: #fcc936; cursor: pointer; border: none; }
 
-.products .big-title { color: #ffffff; padding-bottom: 37px; }
-.products .container { background: #005dbb; }
+.products .big-title { color: #ffffff; padding-bottom: 41px; }
+.products .container.box { background: #005dbb; padding: 56px 0 72px; }
 
+.all-products { padding: 0 93px 0 87px; }
 .all-products__block { margin-bottom: 10px; }
-.all-products__img { float: left; margin-right: 9px; }
+.all-products__block:last-child.all-products__img { float: right; }
+.all-products__img { float: left; margin-right: 9px; position: relative; }
+.all-products__img.big { margin-right: 11px; }
+.all-products__img.right { right: 2px; float: right; }
+.all-products__img:last-child { margin-right: 0; }
+.all-products__img:hover .img-hover { display: block; background: rgba(255, 255, 255, 0.85); }
+.all-products__moreinfo { float: left; }
+.all-products__moreinfo p { color: #fff; font-size: 17px; font-weight: bold; padding-top: 52px; line-height: 35px; }
+.all-products__moreinfo button.btn { margin: 17px 0 0 0; }
+
+.img-hover { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; text-align: center; }
+.img-hover p { font-size: 17px; font-weight: 500; padding-top: 59px; }
+.img-hover button.btn { margin: 14px auto 0; }
+
+.reviews .big-title { padding-bottom: 48px; }
+.reviews-slide { margin-bottom: 33px; overflow-x: scroll; }
+
+.review-view { width: 10000px; list-style: none; }
+.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 30px 48px 30px 31px; border: 2px solid #005dbb; }
