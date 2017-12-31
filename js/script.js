@@ -16,19 +16,13 @@
 	$('.count').html(count.length);
 
 	$('.slick-prev').click(() => {
-        if (current === 1)
-            current = count.length;
-        else
-            current--;
+        current === count.length ? current = 1 : current--;
 
         $('.current').html(current);
     });
 
     $('.slick-next').click(() => {
-        if (current === count.length)
-            current = 1;
-        else
-            current++;
+        current === count.length ? current = 1 : current++;
 
         $('.current').html(current);
     });

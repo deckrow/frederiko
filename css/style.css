@@ -137,7 +137,7 @@ sup { font-size: 8px; }
 .rates .big-title { padding-bottom: 49px; }
 
 .rates-info { display: flex; justify-content: space-between; }
-.rates-info__left, .rates-info__right { flex-basis: 555px; padding: 40px 68px 62px 98px; border: 2px solid #005dbb; text-align: center; }
+.rates-info__left, .rates-info__right { flex-basis: 555px; padding: 40px 68px 0 98px; border: 2px solid #005dbb; text-align: center; }
 .rates-info__left { background: #ffffff; }
 .rates-info__right { background: #005dbb; }
 
@@ -162,4 +162,10 @@ sup { font-size: 8px; }
 .rates-price.white .price-text { color: #ffffff; }
 .rates-price.white .price-sum { color: #fff; }
 
-.rates-btn { font-size: 17px; color: #000e20; padding: 15px 40px; box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); border-radius: 25px; background-color: #fcc936; cursor: pointer; border: none; }
+.rates-btn { font-size: 17px; color: #000e20; margin-bottom: 62px; padding: 15px 40px; box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); border-radius: 25px; background-color: #fcc936; cursor: pointer; border: none; }
+
+.products .big-title { color: #ffffff; padding-bottom: 37px; }
+.products .container { background: #005dbb; }
+
+.all-products__block { margin-bottom: 10px; }
+.all-products__img { float: left; margin-right: 9px; }

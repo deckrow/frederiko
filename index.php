@@ -11,6 +11,7 @@
 <body>
 
     <div id="wrapper">
+
         <!-- header -->
         <header class="header">
             <div class="container clearfix">
@@ -323,6 +324,21 @@
             </div>
         </div>
         <!-- rates end -->
+
+        <!-- additional product -->
+        <div class="products">
+            <div class="container box">
+                <h2 class="big-title">Дополнительная продукция</h2>
+                <div class="all-products">
+                    <div class="all-products__block clearfix">
+                        <div class="all-products__img"><img src="img/content-bigimg.png" alt=""></div>
+                        <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                        <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- additional product end -->
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="slick/slick.min.js"></script>
