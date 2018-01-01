@@ -267,8 +267,7 @@ sup
     float: right
 
 .btn
-    width: 195px
-    height: 50px
+    padding: 16px 42px
     box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
     border-radius: 25px
     background-color: #fcc936
@@ -533,7 +532,7 @@ sup
         padding-bottom: 41px
     .container.box
         background: #005dbb
-        padding: 56px 0 72px
+        padding: 56px 0 86px
 
 .all-products
     padding: 0 93px 0 87px
@@ -585,12 +584,13 @@ sup
 
 // reviews -------------------------------------------------------------------------------------------------------------
 .reviews
+    &.box
+        padding-top: 70px
     .big-title
         padding-bottom: 48px
     &-slide
         margin-bottom: 33px
-        overflow-x: scroll
-
+        overflow: hidden
 
 .review-view
     width: 10000px
@@ -599,6 +599,148 @@ sup
         float: left
         width: 555px
         margin-right: 29px
-        padding: 30px 48px 30px 31px
+        padding: 27px 48px 30px 31px
         border: 2px solid #005dbb
-// reviews end -------------------------------------------------------------------------------------------------------------
+        & p.review-title
+            font-size: 17px
+            font-weight: bold
+            padding-bottom: 8px
+        & p.review-text
+            font-size: 17px
+            line-height: 22px
+
+.reviews-line
+    width: 100%
+    height: 2px
+    background: #ddd
+
+.reviews-hand
+    margin-top: 19px
+    text-align: center
+    &__img
+        padding-right: 8px
+    &__text
+        font-size: 16px
+        color: #005dbb
+        line-height: 46px
+// reviews end ---------------------------------------------------------------------------------------------------------
+
+// footer-form ---------------------------------------------------------------------------------------------------------
+.footer-form
+    text-align: center
+    margin-bottom: 68px
+    & .container
+        position: relative
+    .form-info
+        min-height: 379px
+        background: url(../img/footer-form.png) no-repeat center center
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        box-shadow: 0 0 35px rgba(0, 93, 187, 0.31)
+    .grain
+        background: #005dbb
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: -1
+
+.form-info
+    padding: 0 90px
+    .title
+        font-size: 46px
+        font-weight: 500
+        color: #fff
+        padding-top: 81px
+    .form
+        margin-top: 43px
+    .input
+        width: 300px
+        margin-right: 8px
+        padding: 13px 25px
+        font-size: 17px
+    .input::-webkit-input-placeholder
+        font-size: 17px
+        color: #000e20
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+    .input::-moz-placeholder
+        font-size: 17px
+        color: #000e20
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+    .input:-ms-input-placeholder
+        font-size: 17px
+        color: #000e20
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+    .btn
+        display: inline
+        margin: 0
+        font-size: 17px
+        padding: 14px 42px 15px 42px
+    .rights
+        font-size: 10px
+        color: #fff
+        float: right
+        padding: 10px 30px 0 0
+        a
+            font-size: 10px
+            text-decoration: none
+            border-bottom: 1px dotted #fff
+// footer-form end -----------------------------------------------------------------------------------------------------
+
+//footer ---------------------------------------------------------------------------------------------------------------
+.footer
+    .container
+        padding: 52px 41px 16px
+        border-top: 2px solid #005dbb
+        border-right: 2px solid #005dbb
+        border-left: 2px solid #005dbb
+    .footer-info
+        padding-bottom: 32px
+    .logo
+        margin-right: 120px
+        float: left
+        &-info__text
+            color: #000e20
+    .address
+        margin-right: 70px
+    .work-hours
+        margin-right: 80px
+    .address__text, .work-hours__text
+        font-size: 15px
+    .footer-img
+        margin-right: 7px
+
+.address, .work-hours, .back-to
+    float: left
+    .text
+        font-size: 15px
+        line-height: 20px
+    .link
+        display: inline-block
+        margin-top: 8px
+        font-size: 15px
+        color: #000e20
+
+.address__img, .address__text
+    float: left
+.work-hours__img, .work-hours__text
+    float: left
+
+.privacy-policy
+    float: left
+    color: #000e20
+    font-size: 13px
+    position: absolute
+
+.copyright
+    font-size: 13px
+    color: #000e20
+    text-align: center
+
+//footer end -----------------------------------------------------------------------------------------------------------

@@ -16,7 +16,7 @@
     $('.count').html(count.length);
 
     $('.slick-prev').click(() => {
-        current === count.length ? current = 1 : current--;
+        current === 1 ? current = count.length : current--;
 
         $('.current').html(current);
     });
@@ -31,13 +31,15 @@
     // reviews ---------------------------------------------------------------------------------------------------------
     var w = $(window).width();
 
-    $('.reviews-slide').css('width', w);
+    //$('.reviews-slide').css('width', w);
     $('.reviews-slide').niceScroll({
         cursorcolor: "#fcc936",
         cursoropacitymin: 1,
         cursorwidth: "7px",
         cursorborderradius: 0,
-        cursorfixedheight: 198
+        cursorfixedheight: 198,
+        enablemousewheel: false,
+        grabcursorenabled: true
     });
 
 })(jQuery);
