@@ -120,6 +120,8 @@ img
         margin-right: 41px
     &__item.active .nav__link
         color: #fcc936
+    &__item:hover .nav__link
+        color: #fcc936
     &__item:last-child
         margin-right: 0
     &__link
@@ -142,11 +144,13 @@ img
         display: inline-block
         margin-top: 4px
         font-size: 15px
+        text-decoration: none
         color: #fcc936
-        border: none
         border-bottom: 1px dotted #fcc936
         background: transparent
         cursor: pointer
+    &__call:hover
+        border-bottom: none
 
 sup
     font-size: 8px
@@ -213,12 +217,19 @@ sup
             border-radius: 3px
             border: 1px solid #e0e5ef
             margin-left: 19px
-            input[type=text]
+            input[type=number]
                 height: 100%
-                width: 80px
+                width: 87px
                 border: none
                 font-size: 18px
+                font-weight: 500
+                font-family: 'Roboto', sans-serif
                 text-align: center
+                -moz-appearance: textfield
+            input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button
+                -webkit-appearance: none
+                appearance: none
+                margin: 0
 
 .label
     display: inline-block
@@ -242,11 +253,14 @@ sup
 
 .radio
     display: none
-.radio:checked + label:before
+.radio:checked + .label:before
     content: "\2022"
     color: #000e20
     font-size: 65px
     line-height: 24px
+    z-index: 2
+.radio:not(:checked) + .label:before
+    z-index: 5
 
 .minus, .plus
     display: inline-block
@@ -257,14 +271,18 @@ sup
     width: 37px
     height: 100%
     border: 1px solid #e0e5ef
+    background-position: center center
+    background-repeat: no-repeat
     background-color: #e0e5ef
     cursor: pointer
 
 .minus
     float: left
+    background-image: url("../img/minus.png")
 
 .plus
     float: right
+    background-image: url("../img/plus.png")
 
 .btn
     padding: 16px 42px
@@ -296,6 +314,7 @@ sup
         flex-basis: 260px
         &__title
             display: flex
+            min-height: 67px
             .title
                 flex-basis: 200px
             .img
@@ -316,7 +335,7 @@ sup
 
 .img.bug
     position: relative
-    top: -18px
+    top: -16px
 // advantages end -------------------------------------------------------------------------------------------------------
 
 // works ---------------------------------------------------------------------------------------------------------------
@@ -592,8 +611,11 @@ sup
         margin-bottom: 33px
         overflow: hidden
 
+@-moz-document url-prefix()
+    .reviews-slide
+        margin-bottom: 35px
+
 .review-view
-    width: 10000px
     list-style: none
     &__item
         float: left
@@ -608,6 +630,8 @@ sup
         & p.review-text
             font-size: 17px
             line-height: 22px
+    &__item:last-child
+        margin-right: 0
 
 .reviews-line
     width: 100%
@@ -691,6 +715,8 @@ sup
             font-size: 10px
             text-decoration: none
             border-bottom: 1px dotted #fff
+        a:hover
+            border-bottom: none
 // footer-form end -----------------------------------------------------------------------------------------------------
 
 //footer ---------------------------------------------------------------------------------------------------------------
@@ -711,8 +737,6 @@ sup
         margin-right: 70px
     .work-hours
         margin-right: 80px
-    .address__text, .work-hours__text
-        font-size: 15px
     .footer-img
         margin-right: 7px
 
@@ -731,6 +755,12 @@ sup
     float: left
 .work-hours__img, .work-hours__text
     float: left
+.back-to__img, .back-to__text
+    float: left
+.back-to
+    cursor: pointer
+    .text
+        line-height: 32px
 
 .privacy-policy
     float: left

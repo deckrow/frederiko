@@ -44,7 +44,7 @@
             <div class="contact">
                 <span class="contact__workdays">9<sup>00</sup> - 21<sup>00</sup> без выходых</span>
                 <p class="contact__number">+7 (495) 236-85-40</p>
-                <button class="contact__call">Заказать звонок</button>
+                <a class="contact__call" href="#">Заказать звонок</a>
             </div>
         </div>
     </header>
@@ -77,9 +77,9 @@
                 <div class="area clearfix">
                     <span class="caption">Площадь душевой кабины:</span>
                     <div class="area__input clearfix">
-                        <span class="minus">-</span>
-                        <input type="text" value="1,0 м">
-                        <span class="plus">+</span>
+                        <span class="minus"></span>
+                        <input class="inp" type="number" value="1" step="0.1" min="1" max="10000">
+                        <span class="plus"></span>
                     </div>
                 </div>
                 <button class="btn">Рассчитать</button>
@@ -331,21 +331,57 @@
             <h2 class="big-title">Дополнительная продукция</h2>
             <div class="all-products">
                 <div class="all-products__block clearfix">
-                    <div class="all-products__img big"><img src="img/content-bigimg.png" alt=""></div>
-                    <div class="all-products__img">
-                        <img src="img/content-smallimg.png" alt="">
+                    <div class="all-products__img big">
+                        <img src="img/content-bigimg1.jpg" alt="">
                         <div class="img-hover">
                             <p>Модульные картины из стекла</p>
                             <button class="btn">Заказать замер</button>
                         </div>
                     </div>
-                    <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg1.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg2.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="all-products__block clearfix">
-                    <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
-                    <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
-                    <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
-                    <div class="all-products__img"><img src="img/content-smallimg.png" alt=""></div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg3.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg4.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg5.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
+                    <div class="all-products__img">
+                        <img src="img/content-smallimg6.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="all-products__block clearfix">
                     <div class="all-products__moreinfo">
@@ -353,7 +389,13 @@
                             Оставьте заявку и мы свяжемся с вами.</p>
                         <button class="btn">Узнать больше</button>
                     </div>
-                    <div class="all-products__img right"><img src="img/content-bigimg.png" alt=""></div>
+                    <div class="all-products__img right">
+                        <img src="img/content-bigimg2.jpg" alt="">
+                        <div class="img-hover">
+                            <p>Модульные картины из стекла</p>
+                            <button class="btn">Заказать замер</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -459,7 +501,12 @@
                     </div>
                 </div>
                 <div class="back-to">
-                    <span class="text">Вверх</span>
+                    <div class="back-to__img">
+                        <img class="footer-img" src="img/back-to-top.png" alt="">
+                    </div>
+                    <div class="back-to__text">
+                        <span class="text">Вверх</span>
+                    </div>
                 </div>
             </div>
             <div class="footer-copyright clearfix">
