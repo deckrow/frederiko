@@ -27,34 +27,71 @@
     var current = 1,
         count   = $('div.slide');
 
-    $('.current').html(current);
-    $('.count').html(count.length);
+    $('.works .current').html(current);
+    $('.works .count').html(count.length);
 
-    $('.slick-prev').click(function () {
+    $('.works .slick-prev').click(function () {
         current === 1 ? current = count.length : current--;
 
-        $('.current').html(current);
+        $('.works .current').html(current);
     });
 
-    $('.slick-next').click(function () {
+    $('.works .slick-next').click(function () {
         current === count.length ? current = 1 : current++;
 
-        $('.current').html(current);
+        $('.works .current').html(current);
     });
+
+    // slider-rates ----------------------------------------------------------------------------------------------------
+    if ($(window).width() <= 768) {
+        $('.rates-info').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            draggable: false
+        });
+
+        var current2 = 1,
+            count2   = 2;
+
+        $('.rates .current').html(current2);
+        $('.rates .count').html(count2);
+
+        $('.rates .slick-prev').click(function () {
+            current2 === 1 ? current2 = count2 : current2--;
+
+            $('.rates .current').html(current2);
+        });
+
+        $('.rates .slick-next').click(function () {
+            current2 === count2 ? current2 = 1 : current2++;
+
+            $('.rates .current').html(current2);
+        });
+    }
+
 
 
     // reviews ---------------------------------------------------------------------------------------------------------
-    var reviewWidth = $('.review-view__item'),
-        windowWidth = $(window).width(),
-        resReview = (reviewWidth.length * 584) - 29;
+    if ($(window).width() <= 768) {
+        var widthItem = $(window).width() - 50,
+            totalItem = $('.review-view__item');
 
-    $('.review-view').css('width', resReview);
-    if (windowWidth > 1140)
-        windowWidth -= 1140;
-    else
-        windowWidth = 0;
-    $('.cursor-width').css('left',  '20px !important');
-    console.log(window.innerWidth);
+        totalItem.css('width', widthItem);
+        $('.review-view').css('width', (totalItem.length * widthItem) + (29 * totalItem.length));
+    } else {
+        var reviewWidth = $('.review-view__item'),
+            resultReview = (reviewWidth.length * 584) - 29;
+
+        $('.review-view').css('width', resultReview);
+    }
+
+
+
+
     $('.reviews-slide').niceScroll({
         cursorcolor: "#fcc936",
         cursoropacitymin: 1,

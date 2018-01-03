@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-style.css">
     <title>Document</title>
 </head>
 <body>
@@ -88,67 +89,79 @@
     </div>
     <!-- home end -->
 
+    <!-- home-phone -->
+    <div class="home-phone">
+        <div class="container">
+            <div class="form-info">
+                <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
+                <form action="#" class="form clearfix">
+                    <input type="text" class="input" placeholder="Введите ваше имя">
+                    <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+                    <button class="btn">Получить расчет</button>
+                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- home-phone end -->
+
     <!-- advantages -->
     <div class="advantages box">
         <div class="container">
             <h2 class="big-title">Наши преимущества</h2>
             <div class="all-advantages">
-                <div class="box-advantages">
-                    <div class="info-box">
-                        <div class="info-box__title">
-                            <div class="img"><img src="img/adv1.png" alt="adv"></div>
-                            <div class="title"><p class="bold">Обеспечиваем высокое качество стекла</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Используем итальянское стекло. Производим двойной контроль качества.</p>
-                        </div>
+                <div class="info-box">
+                    <div class="info-box__title">
+                        <div class="img"><img src="img/adv1.png" alt="adv"></div>
+                        <div class="title"><p class="bold">Обеспечиваем высокое качество стекла</p></div>
                     </div>
-                    <div class="info-box">
-                        <div class="info-box__title">
-                            <div class="img"><img src="img/adv2.png" alt="adv"></div>
-                            <div class="title"><p class="bold">Собственное  производство</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Производим стекло с 2011 года, на своём оборудовании.</p>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <div class="info-box__title">
-                            <div class="img"><img src="img/adv3.png" alt="adv"></div>
-                            <div class="title"><p class="bold">Срок изготовления <br> 7 рабочих дней</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Если не успеем — стекло бесплатно.</p>
-                        </div>
+                    <div class="info-box__text">
+                        <p>Используем итальянское стекло. Производим двойной контроль качества.</p>
                     </div>
                 </div>
-                <div class="box-advantages">
-                    <div class="info-box">
-                        <div class="info-box__title">
-                            <div class="img"><img src="img/adv4.png" alt="adv"></div>
-                            <div class="title"><p class="bold">Безопасное, ударостойкое стекло</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Сверхпрочное, жаростойкое и ударопрочное стекло.</p>
-                        </div>
+                <div class="info-box">
+                    <div class="info-box__title">
+                        <div class="img"><img src="img/adv2.png" alt="adv"></div>
+                        <div class="title"><p class="bold">Собственное  производство</p></div>
                     </div>
-                    <div class="info-box">
-                        <div class="info-box__title bug">
-                            <div class="img bug"><img src="img/adv5.png" alt="adv"></div>
-                            <div class="title bux"><p class="bold">Никаких скрытых  наценок и  доплат</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Точную цену вы можете посмотреть на сайте или узнать по телефону.</p>
-                        </div>
+                    <div class="info-box__text">
+                        <p>Производим стекло с 2011 года, на своём оборудовании.</p>
                     </div>
-                    <div class="info-box">
-                        <div class="info-box__title">
-                            <div class="img"><img src="img/adv6.png" alt="adv"></div>
-                            <div class="title"><p class="bold">Гарантируем <br> качество</p></div>
-                        </div>
-                        <div class="info-box__text">
-                            <p>Гарантия на стекло 5 лет, в договоре.</p>
-                        </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box__title">
+                        <div class="img"><img src="img/adv3.png" alt="adv"></div>
+                        <div class="title"><p class="bold">Срок изготовления <br> 7 рабочих дней</p></div>
+                    </div>
+                    <div class="info-box__text">
+                        <p>Если не успеем — стекло бесплатно.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box__title">
+                        <div class="img"><img src="img/adv4.png" alt="adv"></div>
+                        <div class="title"><p class="bold">Безопасное, ударостойкое стекло</p></div>
+                    </div>
+                    <div class="info-box__text">
+                        <p>Сверхпрочное, жаростойкое и ударопрочное стекло.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box__title bug">
+                        <div class="img bug"><img src="img/adv5.png" alt="adv"></div>
+                        <div class="title bux"><p class="bold">Никаких скрытых  наценок и  доплат</p></div>
+                    </div>
+                    <div class="info-box__text">
+                        <p>Точную цену вы можете посмотреть на сайте или узнать по телефону.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-box__title">
+                        <div class="img"><img src="img/adv6.png" alt="adv"></div>
+                        <div class="title"><p class="bold">Гарантируем <br> качество</p></div>
+                    </div>
+                    <div class="info-box__text">
+                        <p>Гарантия на стекло 5 лет, в договоре.</p>
                     </div>
                 </div>
             </div>
@@ -275,7 +288,7 @@
     <div class="rates box">
         <div class="container">
             <h2 class="big-title">Тарифы</h2>
-            <div class="rates-info">
+            <div class="rates-info clearfix">
                 <div class="rates-info__left">
                     <h3 class="rates-title">Каленое стекло</h3>
                     <ul class="rates-list">
@@ -319,6 +332,15 @@
                         <span class="price-sum">19 300 <sub>руб.</sub></span>
                     </div>
                     <button class="rates-btn">Хочу такое же</button>
+                </div>
+            </div>
+            <div class="slider-switch">
+                <div class="btn-prev-next">
+                    <div class="switcher-btn prev"><img src="img/arrow-left.png" alt="prev"></div>
+                    <div class="switcher-btn next"><img src="img/arrow-right.png" alt="next"></div>
+                </div>
+                <div class="current-count">
+                    <p><span class="current"></span>/<span class="count"></span></p>
                 </div>
             </div>
         </div>
@@ -462,7 +484,7 @@
                     <input type="text" class="input" placeholder="Введите ваше имя">
                     <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
                     <button class="btn">Заказать бесплатный замер</button>
-                    <span class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></span>
+                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
                 </form>
             </div>
         </div>
