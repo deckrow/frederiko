@@ -299,6 +299,19 @@ sup
 
 .home-phone
     display: none
+    position: relative
+    .container
+        position: relative
+
+.close
+    position: absolute
+    top: 28px
+    right: 25px
+    border: 2px solid #fff
+    height: 40px
+    width: 40px
+    cursor: pointer
+    background: url("../img/close.png") no-repeat center center
 // home end ------------------------------------------------------------------------------------------------------------
 
 // advantages -----------------------------------------------------------------------------------------------------------
@@ -605,6 +618,19 @@ sup
         padding-top: 59px
     & button.btn
         margin: 14px auto 0
+
+.accord-header
+    display: none
+    cursor: pointer
+    p
+        font-size: 17px
+        color: #fff
+        font-weight: 600
+    &:after
+        content: url(../img/plus.png)
+        position: absolute
+        right: 19px
+        top: 16px
 // add products end ----------------------------------------------------------------------------------------------------
 
 // reviews -------------------------------------------------------------------------------------------------------------
@@ -655,6 +681,33 @@ sup
         font-size: 16px
         color: #005dbb
         line-height: 46px
+
+.hide-text
+    display: none
+    position: absolute
+    bottom: 10px
+    cursor: pointer
+    font-size: 15px
+    font-weight: 600
+    color: #fcc936
+    border: none
+    background: #fff
+    z-index: 4
+    &:before
+        content: url("../img/gold-plus.png")
+        position: relative
+        top: 2px
+        margin-right: 10px
+
+.white-grain
+    position: absolute
+    display: none
+    top: 70%
+    right: 0
+    left: 0
+    bottom: 0
+    z-index: 3
+    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 12%, rgba(255, 255, 255, 0) 100%)
 // reviews end ---------------------------------------------------------------------------------------------------------
 
 // footer-form ---------------------------------------------------------------------------------------------------------
@@ -782,3 +835,53 @@ sup
     text-align: center
 
 //footer end -----------------------------------------------------------------------------------------------------------
+
+// success -------------------------------------------------------------------------------------------------------------
+#wrapper.blue
+    background-color: #005dbb
+
+.success
+    height: 100vh
+    padding: 200px 0 0
+    &-info
+        padding-bottom: 60px
+
+.success-info
+    text-align: center
+    .title, .gold
+        font-size: 34px
+        font-weight: 500
+        color: #fff
+        padding-bottom: 42px
+    .text
+        font-size: 23px
+        padding-bottom: 35px
+        color: #fff
+    .gold
+        color: #fcc936
+
+.success-footer
+    border: 2px solid #fff
+    padding: 50px 40px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .logo, .address, .work-hours, .copyright-info
+        flex-basis: 25%
+    .logo-info__link
+        color: #fff
+    .logo__img
+        margin-right: 10px
+    .address__img
+        margin-right: 10px
+    .work-hours__img
+        margin-right: 10px
+    .text, .privacy-policy, .copyright, .link
+        color: #fff
+        text-align: left
+    .privacy-policy
+        display: block
+        position: relative
+        float: none
+        padding-bottom: 18px
+// success end -------------------------------------------------------------------------------------------------------------

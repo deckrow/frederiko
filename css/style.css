@@ -89,7 +89,10 @@ sup { font-size: 8px; }
 
 .btn { padding: 16px 42px; box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); border-radius: 25px; background-color: #fcc936; font-size: 18px; color: #000e20; border: none; margin: 30px auto 0; display: block; cursor: pointer; }
 
-.home-phone { display: none; }
+.home-phone { display: none; position: relative; }
+.home-phone .container { position: relative; }
+
+.close { position: absolute; top: 28px; right: 25px; border: 2px solid #fff; height: 40px; width: 40px; cursor: pointer; background: url("../img/close.png") no-repeat center center; }
 
 .advantages .big-title { padding-bottom: 56px; }
 .advantages .all-advantages { display: flex; justify-content: space-between; flex-wrap: wrap; }
@@ -190,6 +193,10 @@ sup { font-size: 8px; }
 .img-hover p { font-size: 17px; font-weight: 500; padding-top: 59px; }
 .img-hover button.btn { margin: 14px auto 0; }
 
+.accord-header { display: none; cursor: pointer; }
+.accord-header p { font-size: 17px; color: #fff; font-weight: 600; }
+.accord-header:after { content: url(../img/plus.png); position: absolute; right: 19px; top: 16px; }
+
 .reviews.box { padding-top: 70px; }
 .reviews .big-title { padding-bottom: 48px; }
 .reviews-slide { margin-bottom: 33px; overflow: hidden; }
@@ -207,6 +214,11 @@ sup { font-size: 8px; }
 .reviews-hand { margin-top: 19px; text-align: center; }
 .reviews-hand__img { padding-right: 8px; }
 .reviews-hand__text { font-size: 16px; color: #005dbb; line-height: 46px; }
+
+.hide-text { display: none; position: absolute; bottom: 10px; cursor: pointer; font-size: 15px; font-weight: 600; color: #fcc936; border: none; background: #fff; z-index: 4; }
+.hide-text:before { content: url("../img/gold-plus.png"); position: relative; top: 2px; margin-right: 10px; }
+
+.white-grain { position: absolute; display: none; top: 70%; right: 0; left: 0; bottom: 0; z-index: 3; background-image: linear-gradient(to top, #ffffff 0%, #ffffff 12%, rgba(255, 255, 255, 0) 100%); }
 
 .footer-form { text-align: center; margin-bottom: 68px; }
 .footer-form .container { position: relative; }
@@ -249,3 +261,22 @@ sup { font-size: 8px; }
 .privacy-policy { float: left; color: #000e20; font-size: 13px; position: absolute; }
 
 .copyright { font-size: 13px; color: #000e20; text-align: center; }
+
+#wrapper.blue { background-color: #005dbb; }
+
+.success { height: 100vh; padding: 200px 0 0; }
+.success-info { padding-bottom: 60px; }
+
+.success-info { text-align: center; }
+.success-info .title, .success-info .gold { font-size: 34px; font-weight: 500; color: #fff; padding-bottom: 42px; }
+.success-info .text { font-size: 23px; padding-bottom: 35px; color: #fff; }
+.success-info .gold { color: #fcc936; }
+
+.success-footer { border: 2px solid #fff; padding: 50px 40px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.success-footer .logo, .success-footer .address, .success-footer .work-hours, .success-footer .copyright-info { flex-basis: 25%; }
+.success-footer .logo-info__link { color: #fff; }
+.success-footer .logo__img { margin-right: 10px; }
+.success-footer .address__img { margin-right: 10px; }
+.success-footer .work-hours__img { margin-right: 10px; }
+.success-footer .text, .success-footer .privacy-policy, .success-footer .copyright, .success-footer .link { color: #fff; text-align: left; }
+.success-footer .privacy-policy { display: block; position: relative; float: none; padding-bottom: 18px; }
