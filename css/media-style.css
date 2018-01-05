@@ -1,14 +1,31 @@
-@media screen and (max-width: 768px) {
-    .container { max-width: 720px; padding: 0 25px; }
+@media screen and (max-width: 783px) {
+    .container { max-width: 720px; margin: 0 25px; }
 
     .box { padding: 43px 0 50px }
 
-    .header, .home { display: none;}
+    .big-title:before { margin: 0 35px 0 21px }
 
-    .home-phone { display: block; background: #005dbb; }
+    .call, .menu { display: block }
 
-    .home-phone .form-info { padding: 0 0 290px 0; text-align: center; }
-    .home-phone .form-info .title { font-size: 34px; padding-top: 170px; }
+    .close { top: 28px; right: 0 }
+
+    .header .contact { float: left; padding: 10px 0 0 58px }
+    .header .nav { display: none }
+    .header .call { float: left; padding: 10px 0 0 36px }
+
+    .contact__call { position: relative; top: -25px; right: -225px }
+
+    .home { min-height: 701px }
+
+    .home-title, .home-title .gold { font-size: 54px; font-weight: 500 }
+    .home-title { padding-top: 116px; }
+
+    .home-form { padding: 27px 42px 29px; width: 470px; margin-top: 40px; height: auto }
+    .home-form__title { text-align: center; font-weight: 500 }
+    .home-form .btn { margin-top: 27px; padding: 16px 52px; font-size: 17px; }
+
+    .payment .form-info { padding: 0 0 290px 0; text-align: center; }
+    .payment .form-info .title { font-size: 34px; padding-top: 170px; }
     .form-info .form { margin-top: 21px; }
     .form-info .input { width: 282px; margin-right: 20px }
     .form-info .input:nth-child(2n) { margin-right: 0;}
@@ -23,7 +40,6 @@
     .all-advantages .info-box { padding-right: 70px; flex-basis: 50%; margin-bottom: 0;  }
     .all-advantages .info-box:nth-child(-n + 2) { margin-bottom: 40px; }
 
-    .works { padding: 0 25px; }
     .works .box { padding-bottom: 40px }
     .works .container { max-height: none; position: relative }
     .works .slider { padding: 0 125px 0; }
@@ -36,25 +52,25 @@
     .slider-switch, .slick-prev, .slick-next { left: 0; bottom: -57px; }
     .slick-next { left: 48px;}
 
-    .rates .container { position: relative; padding: 0; }
+    .rates .container { position: relative; }
     .rates .slider-switch { display: flex; }
     .rates .big-title { padding-bottom: 29px; }
-    .rates.box { padding: 150px 25px 0; }
+    .rates.box { padding: 150px 0 0; }
     .rates-info { display: block; justify-content: normal; }
     .rates-info__left, .rates-info__right { float: left; padding: 25px 48px 0 68px; }
     .rates-title { font-size: 24px; }
     .rates-btn { margin-bottom: 22px; }
 
-    .products { padding: 110px 25px 0; }
+    .products { padding: 110px 0 0; }
     .products .container.box { padding: 40px 0 47px; }
     .products .big-title { padding-bottom: 30px }
 
-    .all-products { padding: 0 53px; }
+    .all-products { padding: 0 63px; }
     .all-products__img, .all-products__img.big { margin-right: 5px; }
     .all-products__block { margin-bottom: 5px; }
     .all-products__img img { width: 144px; height: 147px; }
     .all-products__img.big img, .all-products__img.right img { width: 293px; height: 147px; }
-    .all-products__img.right { right: 6px; }
+    .all-products__img.right { right: 2px; }
     .all-products__moreinfo p { font-size: 14px; padding-top: 16px; line-height: 25px; }
     .all-products__moreinfo button.btn { margin-top: 7px; font-size: 16px }
 
@@ -62,7 +78,7 @@
     .img-hover p { font-size: 15px; padding: 49px 10px 0; }
     .img-hover button { display: none; }
 
-    .reviews.box { padding: 42px 25px 0; }
+    .reviews.box { padding: 42px 0 0; }
     .reviews .container { padding: 0; }
     .reviews .big-title { padding-bottom: 23px; }
 
@@ -97,22 +113,51 @@
 }
 
 @media screen and (max-width: 335px) {
-    .container { max-width: 320px; padding: 0 15px; }
+    .container { max-width: 320px; margin: 0 15px; }
 
     .box { padding: 31px 0 36px; }
 
-    .close { right: 15px; }
+    .header { top: 10px }
+    .header .contact { display: none }
+    .header .call { padding: 0 0 0 17px }
+
+    .logo-img { margin-right: 8px }
+    .logo-img img { height: 41px; width: 48px }
+    .logo-info__link { font-size: 23px; letter-spacing: 0.1px }
+    .logo-info__text { font-size: 9px }
+
+    .menu { margin-top: 0 }
+
+    .close { right: 0; top: 12px }
+
+    .home { min-height: 580px }
+
+    .home-title { padding-top: 78px; }
+    .home-title, .home-title .gold { font-size: 29px; line-height: 40px }
+
+    .home-form { width: 290px; margin-top: 10px; padding: 20px 23px 18px }
+    .home-form__title { text-align: left; font-size: 21px }
+    .home-form .choice { padding-top: 12px; display: block }
+    .home-form .choice .caption { padding-bottom: 8px; }
+    .home-form .choice__tranparency, .home-form .choice__type { padding: 0 }
+    .home-form .choice__type { margin-top: 4px }
+    .home-form .area { margin-top: 0; padding: 0 }
+    .home-form .area__input { margin-left: 0 }
+    .home-form .btn { margin-top: 10px }
+    .home-form .area .caption { line-height: 26px; padding-bottom: 4px }
+
+    .label { margin-bottom: 4px }
 
     .big-title { font-size: 23px }
     .big-title:before { margin: 0 10px 0 0; }
 
     .title .bold { font-weight: 600 }
 
-    .home-phone .form-info .title { font-size: 24px; padding-top: 150px; }
-    .home-phone .form-info { padding-bottom: 144px }
+    .payment .form-info .title { font-size: 24px; padding-top: 150px; }
+    .payment .form-info { padding-bottom: 144px }
     .form-info .form { margin-top: 14px; }
     .form-info .input { margin-right: 0; margin-bottom: 10px; }
-    .home-phone .form-info .btn { margin-top: 0; padding: 16px 70px }
+    .payment .form-info .btn { margin-top: 0; padding: 16px 70px }
     .form-info .rights { padding-right: 0; }
 
     .all-advantages .info-box { padding-right: 0; flex-basis: 100%; margin-bottom: 30px; }
@@ -120,7 +165,7 @@
     .all-advantages .info-box:last-child { margin-bottom: 0 }
 
     .works, .works .slider { padding: 0; }
-    .works .container { padding: 29px 15px 0; }
+    .works .container { padding: 29px 15px 0; margin: 0 }
     .works .big-title { padding-bottom: 11px }
 
     .slide-info, .slide-img, .slide-img img { width: 290px }
@@ -135,7 +180,7 @@
     .slider-switch, .slick-prev, .slick-next { left: 15px; }
     .slick-next { left: 63px; }
 
-    .rates.box { padding: 110px 15px 0 }
+    .rates.box { padding: 110px 0 0 }
     .rates-title { font-size: 17px; font-weight: 600; text-align: center }
     .rates-list__text { font-size: 15px }
     .rates-list__item:before { left: -30px }
@@ -149,7 +194,7 @@
     .rates .slick-next { left: 48px; }
 
     .products { padding: 90px 0 0; }
-    .products .container.box { padding: 29px 15px 30px }
+    .products .container.box { padding: 29px 15px 30px; margin: 0 }
 
     .all-products__img:hover .img-hover { display: block; background: rgba(255, 255, 255, 0) }
     .img-hover, .img-hover button { display: block; }
@@ -157,7 +202,7 @@
     .img-hover p { display: none; }
     .all-products { padding: 0; }
     .all-products__img, .all-products__img.big { margin-right: 0; width: 100%; padding: 13px 0; border-bottom: 1px solid #0082d6  }
-    .all-products__img.big img, .all-products__img img { width: 290px; height: 235px; }
+    .all-products__img.big img, .all-products__img img { width: 100%; height: 235px; }
     .all-products__block { margin-bottom: 0 }
     .all-products__moreinfo { text-align: center }
     .all-products__moreinfo button.btn { display: inline-block }
@@ -167,7 +212,7 @@
     .accord-header { display: block; }
     .accord-content { display: none; height: 310px; padding-top: 15px }
 
-    .reviews.box { padding: 42px 15px 0 }
+    .reviews.box { padding: 42px 0 0 }
     .review-view__item { padding: 20px 20px 35px; position: relative; background-image: linear-gradient(to top, #ffffff 0%, #ffffff 12%, rgba(255, 255, 255, 0) 100%); }
     .review-view__item p.review-text { font-size: 15px }
 
@@ -177,13 +222,13 @@
     .white-grain { display: block }
 
     .footer-form .form-info .title { text-align: left; font-size: 29px; padding-top: 23px }
-    .footer-form { padding: 0 15px 0 }
+    .footer-form { padding: 0 }
     .footer-form .container { padding: 0 20px }
     .footer-form .form-info { padding-bottom: 29px }
     .footer-form .form-info .input { width: 100%; }
-    .footer-form .form-info .btn { padding: 15px 6px }
+    .footer-form .form-info .btn { padding: 15px 16px }
 
-    .footer { padding: 0 15px }
+    .footer { padding: 0 }
     .footer .logo { margin: 0 0 24px }
     .footer .address { margin: 0 0 22px }
     .footer .container { padding: 23px 20px 21px }

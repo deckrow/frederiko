@@ -14,7 +14,7 @@
 <div id="wrapper">
 
     <!-- header -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="container clearfix">
             <div class="logo clearfix">
                 <div class="logo-img">
@@ -27,25 +27,33 @@
             </div>
             <ul class="nav">
                 <li class="nav__item active">
-                    <a class="nav__link" href="#">Калькулятор</a>
+                    <a class="nav__link scroll" href="#">Калькулятор</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Преимущества</a>
+                    <a class="nav__link scroll" href="#advantages">Преимущества</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Тарифы</a>
+                    <a class="nav__link scroll" href="#rates">Тарифы</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Наши работы</a>
+                    <a class="nav__link scroll" href="#works">Наши работы</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link scroll" href="#reviews">Отзывы</a>
                 </li>
             </ul>
             <div class="contact">
                 <span class="contact__workdays">9<sup>00</sup> - 21<sup>00</sup> без выходых</span>
                 <p class="contact__number">+7 (495) 236-85-40</p>
                 <a class="contact__call" href="#">Заказать звонок</a>
+            </div>
+            <div class="call">
+                <img src="img/telephone.png" alt="">
+            </div>
+            <div class="menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </div>
     </header>
@@ -54,7 +62,7 @@
     <!-- home -->
     <div class="home">
         <div class="container">
-            <h1 class="home-title">Душевые кабины из стекла <br> <span class="gold">от 10000 руб</span></h1>
+            <h1 class="home-title">Душевые кабины из стекла <span class="gold">от 10000 руб</span></h1>
             <form class="home-form" action="" name="ima_kl">
                 <h4 class="home-form__title">Рассчитайте стоимость душевой кабины</h4>
                 <div class="choice">
@@ -83,31 +91,41 @@
                         <span class="plus"></span>
                     </div>
                 </div>
-                <input type="submit" class="btn" value="Рассчитать">
+                <a href="#" class="btn">Рассчитать</a>
             </form>
+        </div>
+        <div class="payment">
+            <div class="container">
+                <div class="close pay"></div>
+                <div class="form-info">
+                    <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
+                    <form action="#" class="form clearfix" id="phone-form__main" name="telefon_lida">
+                        <input type="text" class="input" placeholder="Введите ваше имя" name="name">
+                        <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
+                        <input type="submit" class="btn" value="Получить расчет">
+                        <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="phone-menu">
+            <div class="container">
+                <div class="close phone"></div>
+                <ul class="menu-list">
+                    <li class="menu-list__item active"><a href="#" class="menu-list__link scroll">Калькулятор</a></li>
+                    <li class="menu-list__item"><a href="#advantages" class="menu-list__link scroll">Преимущества</a></li>
+                    <li class="menu-list__item"><a href="#rates" class="menu-list__link scroll">Тарифы</a></li>
+                    <li class="menu-list__item"><a href="#works" class="menu-list__link scroll">Наши работы</a></li>
+                    <li class="menu-list__item"><a href="#reviews" class="menu-list__link scroll">Отзывы</a></li>
+                    <li class="menu-list__item"><a href="#footer" class="menu-list__link scroll">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- home end -->
 
-    <!-- home-phone -->
-    <div class="home-phone">
-        <div class="container">
-            <div class="close"></div>
-            <div class="form-info">
-                <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                <form action="#" class="form clearfix">
-                    <input type="text" class="input" placeholder="Введите ваше имя">
-                    <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-                    <button class="btn">Получить расчет</button>
-                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- home-phone end -->
-
     <!-- advantages -->
-    <div class="advantages box">
+    <div id="advantages" class="advantages box">
         <div class="container">
             <h2 class="big-title">Наши преимущества</h2>
             <div class="all-advantages">
@@ -171,7 +189,7 @@
     <!-- advantages end -->
 
     <!-- works -->
-    <div class="works">
+    <div id="works" class="works">
         <div class="container box">
             <h2 class="big-title">Наши работы</h2>
             <div class="slider clearfix">
@@ -286,7 +304,7 @@
     <!-- works end -->
 
     <!-- rates -->
-    <div class="rates box">
+    <div id="rates" class="rates box">
         <div class="container">
             <h2 class="big-title">Тарифы</h2>
             <div class="rates-info clearfix">
@@ -447,7 +465,7 @@
     <!-- additional product end -->
 
     <!-- reviews -->
-    <div class="reviews box">
+    <div id="reviews" class="reviews box">
         <div class="container">
             <h2 class="big-title">Отзывы</h2>
             <div class="reviews-slide">
@@ -520,7 +538,7 @@
             <div class="grain"></div>
             <div class="form-info">
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form">
+                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form__footer">
                     <input type="text" class="input" placeholder="Введите ваше имя" name="name" minlength="2">
                     <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
                     <input type="submit" class="btn" value="Заказать бесплатный замер">
@@ -532,7 +550,7 @@
     <!-- footer-form end -->
 
     <!-- footer -->
-    <div class="footer">
+    <div id="footer" class="footer">
         <div class="container">
             <div class="footer-info clearfix">
                 <div class="logo clearfix">
@@ -564,10 +582,14 @@
                 </div>
                 <div class="back-to">
                     <div class="back-to__img">
-                        <img class="footer-img" src="img/back-to-top.png" alt="">
+                        <a href="#header">
+                            <img class="footer-img" src="img/back-to-top.png" alt="">
+                        </a>
                     </div>
                     <div class="back-to__text">
-                        <span class="text">Вверх</span>
+                        <a href="#header">
+                            <span class="text">Вверх</span>
+                        </a>
                     </div>
                 </div>
             </div>

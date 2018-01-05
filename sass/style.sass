@@ -43,7 +43,6 @@ a
     font-family: 'Roboto', sans-serif
     &:hover
         text-decoration: none
-        background: none
     &:active, &:hover
         outline: 0
 
@@ -73,9 +72,10 @@ img
     font-size: 31px
     color: #000e20
     &:before
-        content: '\2014'
+        content: url(../img/line.png)
         position: relative
         margin: 0 35px 0 26px
+        top: -5px
 // settings end --------------------------------------------------------------------------------------------------------
 
 // header --------------------------------------------------------------------------------------------------------------
@@ -84,6 +84,7 @@ img
     top: 25px
     left: 0
     right: 0
+    z-index: 111
     .logo
         float: left
     .nav
@@ -152,6 +153,28 @@ img
     &__call:hover
         border-bottom: none
 
+.menu
+    display: none
+    float: right
+    height: 38px
+    width: 38px
+    border: 2px solid #ffffff
+    text-align: center
+    margin-top: 10px
+    padding-top: 9px
+    cursor: pointer
+    .line
+        background: #fff
+        width: 20px
+        height: 2px
+        display: block
+        margin: 0 auto 5px
+    .line:last-child
+        padding-bottom: 0
+
+.call
+    display: none
+
 sup
     font-size: 8px
 // header end ----------------------------------------------------------------------------------------------------------
@@ -164,10 +187,13 @@ sup
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
+    position: relative
     &-title
         padding-top: 158px
     &-form
         margin: 93px auto 0
+    .payment.none
+        display: none
 
 .home-title
     text-align: center
@@ -183,12 +209,13 @@ sup
 
 .home-form
     width: 555px
-    height: 345px
     background: #ffffff
-    padding: 30px 42px 0
+    padding: 30px 42px 36px
+    text-align: center
     &__title
         color: #000e20
-        font-size: 24px
+        font-size: 25px
+        text-align: left
     .caption
         font-size: 15px
         font-weight: bold
@@ -196,6 +223,7 @@ sup
     .choice
         display: flex
         padding-top: 22px
+        text-align: left
         &__tranparency
             flex: 1
             padding-left: 5px
@@ -204,6 +232,9 @@ sup
             padding-left: 5px
         .caption
             padding-bottom: 16px
+    a.btn
+        display: inline-block
+        text-decoration: none
     .area
         margin-top: 21px
         padding-left: 4px
@@ -297,16 +328,76 @@ sup
     display: block
     cursor: pointer
 
-.home-phone
+.payment
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background: #005dbb
+    z-index: 112
     display: none
-    position: relative
     .container
         position: relative
+    .form-info
+        text-align: center
+        padding-top: 125px
+        .title
+            padding-top: 100px
+            font-size: 35px
+        .form
+            margin-top: 20px
+        .btn
+            display: block
+            margin: 20px auto 0
+        .rights
+            float: none
+
+.phone-menu
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background: #005dbb
+    display: none
+    z-index: 112
+    .container
+        position: relative
+    .menu-list
+        list-style: none
+        padding: 89px 25px 0
+        &__item
+            border-bottom: 1px solid #0082d6
+        &__item:hover .menu-list__link
+            background-color: #fcc936
+            color: #000e20
+            &:before
+                content: url(../img/line.png)
+                position: relative
+                margin: 0 8px 0 14px
+                top: -5px
+        &__item.active .menu-list__link
+            background-color: #fcc936
+            color: #000e20
+            &:before
+                content: url(../img/line.png)
+                position: relative
+                margin: 0 8px 0 14px
+                top: -5px
+        &__link
+            font-size: 23px
+            color: #fff
+            padding: 25px 0
+            text-decoration: none
+            display: block
+        &__item:last-child
+            border-bottom: none
 
 .close
     position: absolute
-    top: 28px
-    right: 25px
+    top: 130px
+    right: 190px
     border: 2px solid #fff
     height: 40px
     width: 40px
@@ -361,6 +452,8 @@ sup
     .big-title
         color: #ffffff
         padding-bottom: 43px
+        &:before
+            content: url(../img/white-line.png)
     .container
         background-color: #005dbb
         max-height: 558px
@@ -568,6 +661,8 @@ sup
     .big-title
         color: #ffffff
         padding-bottom: 41px
+        &:before
+            content: url(../img/white-line.png)
     .container.box
         background: #005dbb
         padding: 56px 0 86px
@@ -818,6 +913,9 @@ sup
     float: left
 .back-to__img, .back-to__text
     float: left
+.back-to__text a
+    color: #000e20
+    text-decoration: none
 .back-to
     cursor: pointer
     .text

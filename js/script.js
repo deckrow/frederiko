@@ -118,19 +118,19 @@
 
         if ($(window).width() <= 335) {
             var textBlock = $('.hide'),
-                btn       = $('.hide-text'),
-                textHeight  = textBlock.innerHeight();
+                btn       = $('.review-view__item .hide-text'),
+                textHeight  = textBlock.innerHeight() + 20;
 
             textBlock.css('height', 350 + 'px');
 
-            $(btn).click(function () {                              //text-main
-                if (textBlock.innerHeight() === 350) {
-                    textBlock.animate({ height: textHeight }, 500);
-                    $('.white-grain').css('display', 'none');
+            $(btn).click(function () {
+                if ($(this).siblings('.hide').innerHeight() === 350) {
+                    $(this).siblings('.hide').animate({ height: textHeight }, 500);
+                    $(this).siblings('.white-grain').css('display', 'none');
                     $(this).text('Скрыть отзыв');
                 } else {
-                    textBlock.animate({ height: 350 }, 500);
-                    $('.white-grain').css('display', 'block');
+                    $(this).siblings('.hide').animate({ height: 350 }, 500);
+                    $(this).siblings('.white-grain').css('display', 'block');
                     $(this).text('Развернуть отзыв');
                 }
             });
@@ -151,9 +151,22 @@
     });
 
 
-    // footer-form -----------------------------------------------------------------------------------------------------
+    // validation ------------------------------------------------------------------------------------------------------
     $(document).ready(function () {
-        $('#phone-form').validate({
+        $('#phone-form__footer').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: {
+                    required: true,
+                    phoneNumber: true
+                }
+            }
+        });
+
+        $('#phone-form__main').validate({
             rules: {
                 name: {
                     required: true,
@@ -167,8 +180,43 @@
         });
 
         jQuery.validator.addMethod("phoneNumber", function (value, element) {
-            return this.optional(element) || /^\+{1}\d{1}\s\d{3}\s\d{3}-\d{2}-\d{2}$/.test(value);
+            return this.optional(element) || /^\+{1}[7][0-6,9]\d{7}$/.test(value);
         }, "Неверный формат телефона");
+    });
+
+    // click -----------------------------------------------------------------------------------------------------------
+    $(document).ready(function () {
+        $('.menu').click(function () {
+           $('.phone-menu').css('display', 'block');
+
+        });
+
+        $('.home-form .btn').click(function () {
+            $('.payment').css('display', 'block');
+
+        });
+
+        $('.close').click(function () {
+            if ($(this).hasClass("pay")) {
+                $('.payment').css('display', 'none');
+            } else if ($(this).hasClass("phone")) {
+                $('.phone-menu').css('display', 'none');
+            }
+        });
+    });
+
+    // scroll ----------------------------------------------------------------------------------------------------------
+    $(document).ready(function () {
+        $("a.scroll").click(function () {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            if ($.browser.safari) {
+                $('body').animate({ scrollTop: destination }, 2000);
+            } else {
+                $('html').animate({ scrollTop: destination }, 2000);
+            }
+            return false;
+        });
     });
 
 })(jQuery);
