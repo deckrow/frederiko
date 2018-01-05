@@ -151,5 +151,25 @@
     });
 
 
+    // footer-form -----------------------------------------------------------------------------------------------------
+    $(document).ready(function () {
+        $('#phone-form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: {
+                    required: true,
+                    phoneNumber: true
+                }
+            }
+        });
+
+        jQuery.validator.addMethod("phoneNumber", function (value, element) {
+            return this.optional(element) || /^\+{1}\d{1}\s\d{3}\s\d{3}-\d{2}-\d{2}$/.test(value);
+        }, "Неверный формат телефона");
+    });
+
 })(jQuery);
 

@@ -55,7 +55,7 @@
     <div class="home">
         <div class="container">
             <h1 class="home-title">Душевые кабины из стекла <br> <span class="gold">от 10000 руб</span></h1>
-            <div class="home-form">
+            <form class="home-form" action="" name="ima_kl">
                 <h4 class="home-form__title">Рассчитайте стоимость душевой кабины</h4>
                 <div class="choice">
                     <div class="choice__tranparency">
@@ -83,8 +83,8 @@
                         <span class="plus"></span>
                     </div>
                 </div>
-                <button class="btn">Рассчитать</button>
-            </div>
+                <input type="submit" class="btn" value="Рассчитать">
+            </form>
         </div>
     </div>
     <!-- home end -->
@@ -520,10 +520,10 @@
             <div class="grain"></div>
             <div class="form-info">
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                <form action="#" class="form clearfix">
-                    <input type="text" class="input" placeholder="Введите ваше имя">
-                    <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-                    <button class="btn">Заказать бесплатный замер</button>
+                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form">
+                    <input type="text" class="input" placeholder="Введите ваше имя" name="name" minlength="2">
+                    <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
+                    <input type="submit" class="btn" value="Заказать бесплатный замер">
                     <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
                 </form>
             </div>
@@ -583,6 +583,7 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/messages_ru.js"></script>
     <script src="js/script.js"></script>
 
 </div>
