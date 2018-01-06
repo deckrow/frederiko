@@ -299,6 +299,7 @@ sup { font-size: 8px; }
 .success-info .title, .success-info .gold { font-size: 34px; font-weight: 500; color: #fff; padding-bottom: 42px; }
 .success-info .text { font-size: 23px; padding-bottom: 35px; color: #fff; }
 .success-info .gold { color: #fcc936; }
+.success-info .btn { text-decoration: none; display: inline-block; }
 
 .success-footer { border: 2px solid #fff; padding: 50px 40px; display: flex; justify-content: space-between; flex-wrap: wrap; }
 .success-footer .logo, .success-footer .address, .success-footer .work-hours, .success-footer .copyright-info { flex-basis: 25%; }

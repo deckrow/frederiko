@@ -194,6 +194,23 @@
         $('.home-form .btn').click(function () {
             $('.payment').css('display', 'block');
 
+            /*var metr = $('.home-form .area__input .inp').val(),
+                sum = 0;
+
+            if ($('#oraque').prop("checked")) {
+                sum += 2000;
+            } else if ($('#transparent').prop("checked")) {
+                sum = 0;
+            }
+
+            if ($('#usual').prop("checked")) {
+                sum += 3800;
+            } else if ($('#optiwhite').prop("checked")) {
+                sum += 5800;
+            }
+
+            sum *= metr;
+            $.session.set('sum', sum);*/
         });
 
         $('.close').click(function () {
@@ -218,6 +235,9 @@
             return false;
         });
     });
+
+    // calc ------------------------------------------------------------------------------------------------------------
+
 
 })(jQuery);
 

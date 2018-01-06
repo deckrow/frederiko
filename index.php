@@ -1,3 +1,52 @@
+<?php
+    session_start();
+
+    if (isset($_POST["send"])) {
+        $from = htmlspecialchars( "Website");
+        $to = htmlspecialchars("maft.den@gmail.com");
+        $subject = htmlspecialchars("New query");
+        $name = htmlspecialchars($_POST["name"]);
+        $phone = htmlspecialchars($_POST["phone"]);
+        $transparent = "";
+        $type = "";
+        $area = "";
+        $message = "Имя: " . $name . " Телефон: " . $phone;
+
+        $_SESSION["name"] = $name;
+        $_SESSION["phone"] = $name;
+
+        $headers = "From: $from\r\nReply-to: $from \r\nContent-type:text/plain; charset=utf-8\r\n";
+        $subject = "=?uff-8?B?" . base64_encode($subject) . "?=";
+        mail ($to, $subject, $message, $headers);
+        header ("Location: success.php?send=1");
+        exit;
+    }
+
+    if (isset($_GET["calc"])) {
+        $_SESSION["sum"] = calc();
+    }
+
+    function calc () {
+        $meter = $_GET["met"];
+        $sum = 0;
+
+        if ($_GET["transparency"] == "opaque") {
+            $sum += 2000;
+        } else if ($_GET["transparency"] == "transparent") {
+            $sum = 0;
+        }
+
+        if ($_GET["type"] == "usual") {
+            $sum += 3800;
+        } else if ($_GET["type"] == "optiwhite") {
+            $sum += 5800;
+        }
+
+        return $sum *= $meter;
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -63,23 +112,23 @@
     <div class="home">
         <div class="container">
             <h1 class="home-title">Душевые кабины из стекла <span class="gold">от 10000 руб</span></h1>
-            <form class="home-form" action="" name="ima_kl">
+            <form class="home-form" action="" name="ima_kl" method="get">
                 <h4 class="home-form__title">Рассчитайте стоимость душевой кабины</h4>
                 <div class="choice">
                     <div class="choice__tranparency">
                         <p class="caption ch">Прозрачность стекла:</p>
-                        <input class="radio" type="radio" id="oraque" name="transparency" checked>
-                        <label class="label" for="oraque">Матовое</label>
+                        <input class="radio" type="radio" id="opaque" value="opaque" name="transparency" checked>
+                        <label class="label" for="opaque">Матовое</label>
                         <br>
-                        <input class="radio" type="radio" id="transparent" name="transparency">
+                        <input class="radio" type="radio" id="transparent" value="transparent" name="transparency">
                         <label class="label" for="transparent">Прозрачное</label>
                     </div>
                     <div class="choice__type">
                         <p class="caption ch">Тип стекла:</p>
-                        <input class="radio" type="radio" id="usual" name="type" checked>
+                        <input class="radio" type="radio" id="usual" value="usual" name="type" checked>
                         <label class="label" for="usual">Обычное</label>
                         <br>
-                        <input class="radio" type="radio" id="optiwhite" name="type">
+                        <input class="radio" type="radio" id="optiwhite" value="optiwhite" name="type">
                         <label class="label" for="optiwhite">Optiwhite</label>
                     </div>
                 </div>
@@ -87,11 +136,11 @@
                     <span class="caption">Площадь душевой кабины:</span>
                     <div class="area__input clearfix">
                         <span class="minus"></span>
-                        <input class="inp" type="number" value="1" step="0.1" min="1" max="10000">
+                        <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000">
                         <span class="plus"></span>
                     </div>
                 </div>
-                <a href="#" class="btn">Рассчитать</a>
+                <input class="btn" value="Рассчитать" type="submit" name="calc">
             </form>
         </div>
         <div class="payment">
@@ -99,10 +148,10 @@
                 <div class="close pay"></div>
                 <div class="form-info">
                     <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                    <form action="#" class="form clearfix" id="phone-form__main" name="telefon_lida">
-                        <input type="text" class="input" placeholder="Введите ваше имя" name="name">
-                        <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
-                        <input type="submit" class="btn" value="Получить расчет">
+                    <form action="#" class="form clearfix" id="phone-form__main" name="telefon_lida" method="post">
+                        <input type="text" class="input" placeholder="Введите ваше имя" name="name" value="<?php echo $_SESSION["name"] ?>">
+                        <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone" value="<?php echo $_SESSION["phone"] ?>">
+                        <input type="submit" class="btn" value="Получить расчет" name="send">
                         <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
                     </form>
                 </div>
@@ -538,7 +587,7 @@
             <div class="grain"></div>
             <div class="form-info">
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form__footer">
+                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form__footer" method="post">
                     <input type="text" class="input" placeholder="Введите ваше имя" name="name" minlength="2">
                     <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
                     <input type="submit" class="btn" value="Заказать бесплатный замер">

@@ -222,6 +222,7 @@
     .white-grain { display: block }
 
     .footer-form .form-info .title { text-align: left; font-size: 29px; padding-top: 23px }
+    .footer-form .form-info .rights, .footer-form .form-info .rights a { font-size: 9px }
     .footer-form { padding: 0 }
     .footer-form .container { padding: 0 20px }
     .footer-form .form-info { padding-bottom: 29px }
