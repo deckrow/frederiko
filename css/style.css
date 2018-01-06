@@ -77,6 +77,7 @@ sup { font-size: 8px; }
 .home-form .area .caption { float: left; line-height: 36px; }
 .home-form .area__input { float: left; width: 163px; height: 36px; border-radius: 3px; border: 1px solid #e0e5ef; margin-left: 19px; position: relative; }
 .home-form .area__input input[type=number] { height: 100%; width: 87px; border: none; font-size: 18px; font-weight: 500; font-family: "Roboto", sans-serif; text-align: center; -moz-appearance: textfield; }
+.home-form .area__input input[type=number]:after { content: "m2"; left: 10px; top: 10px; }
 .home-form .area__input input[type=number]::-webkit-outer-spin-button, .home-form .area__input input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; }
 
 .label { display: inline-block; cursor: pointer; position: relative; margin-left: 34px; font-size: 13px; margin-bottom: 6px; line-height: 22px; }

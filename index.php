@@ -133,7 +133,7 @@
                     <span class="caption">Площадь душевой кабины:</span>
                     <div class="area__input clearfix">
                         <span class="minus"></span>
-                        <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000">
+                        <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000" pattern="\d+[м]?|\d+\.\d+[м]?">
                         <span class="plus"></span>
                     </div>
                 </div>
