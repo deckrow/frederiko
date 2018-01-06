@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +16,7 @@
     <div class="success">
         <div class="container">
             <div class="success-info">
-                <h1 class="title">Спасибо за вашу заявку. <br>  Стоимость стекла составляет <span class="gold"><?php echo $_SESSION["sum"] ?>руб.</span></h1>
+                <h1 class="title">Спасибо за вашу заявку. <br>  Стоимость стекла составляет <span class="gold"></span></h1>
                 <p class="text">В течение 1 рабочего дня с вами свяжется наш менеджер для <br> уточнения информации.</p>
                 <a class="btn" href="index.php">Вернуться на главную</a>
             </div>
@@ -62,6 +60,7 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/sessvars.js"></script>
     <script src="js/script.js"></script>
 
 </div>

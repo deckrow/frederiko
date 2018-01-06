@@ -58,12 +58,12 @@ img { border: none; vertical-align: middle; }
 sup { font-size: 8px; }
 
 .home { min-height: 908px; background: url(../img/home-bg.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position: relative; }
-.home-title { padding-top: 158px; }
+.home-title { padding: 158px 60px 0; }
 .home-form { margin: 93px auto 0; }
 .home .payment.none { display: none; }
 
-.home-title { text-align: center; color: #ffffff; font-size: 72px; font-weight: 600; line-height: 72px; }
-.home-title .gold { color: #fcc936; font-size: 72px; font-weight: 600; line-height: 72px; }
+.home-title { text-align: center; color: #ffffff; font-size: 72px; font-weight: 500; line-height: 72px; }
+.home-title .gold { color: #fcc936; font-size: 72px; font-weight: 500; line-height: 72px; }
 
 .home-form { width: 555px; background: #ffffff; padding: 30px 42px 36px; text-align: center; }
 .home-form__title { color: #000e20; font-size: 25px; text-align: left; }

@@ -4,12 +4,9 @@
     if (isset($_POST["send"])) {
         $from = htmlspecialchars( "Website");
         $to = htmlspecialchars("maft.den@gmail.com");
-        $subject = htmlspecialchars("New query");
+        $subject = htmlspecialchars("Душевая кабина.");
         $name = htmlspecialchars($_POST["name"]);
         $phone = htmlspecialchars($_POST["phone"]);
-        $transparent = "";
-        $type = "";
-        $area = "";
         $message = "Имя: " . $name . " Телефон: " . $phone;
 
         $_SESSION["name"] = $name;
@@ -22,28 +19,28 @@
         exit;
     }
 
-    if (isset($_GET["calc"])) {
+    /*if (isset($_POST["calc"])) {
         $_SESSION["sum"] = calc();
     }
 
     function calc () {
-        $meter = $_GET["met"];
+        $meter = $_POST["met"];
         $sum = 0;
 
-        if ($_GET["transparency"] == "opaque") {
+        if ($_POST["transparency"] == "opaque") {
             $sum += 2000;
-        } else if ($_GET["transparency"] == "transparent") {
+        } else if ($_POST["transparency"] == "transparent") {
             $sum = 0;
         }
 
-        if ($_GET["type"] == "usual") {
+        if ($_POST["type"] == "usual") {
             $sum += 3800;
         } else if ($_GET["type"] == "optiwhite") {
             $sum += 5800;
         }
 
         return $sum *= $meter;
-    }
+    }*/
 
 ?>
 
@@ -112,23 +109,23 @@
     <div class="home">
         <div class="container">
             <h1 class="home-title">Душевые кабины из стекла <span class="gold">от 10000 руб</span></h1>
-            <form class="home-form" action="" name="ima_kl" method="get">
+            <div class="home-form">
                 <h4 class="home-form__title">Рассчитайте стоимость душевой кабины</h4>
                 <div class="choice">
                     <div class="choice__tranparency">
                         <p class="caption ch">Прозрачность стекла:</p>
-                        <input class="radio" type="radio" id="opaque" value="opaque" name="transparency" checked>
+                        <input class="radio" type="radio" id="opaque" name="transparency" checked>
                         <label class="label" for="opaque">Матовое</label>
                         <br>
-                        <input class="radio" type="radio" id="transparent" value="transparent" name="transparency">
+                        <input class="radio" type="radio" id="transparent" name="transparency">
                         <label class="label" for="transparent">Прозрачное</label>
                     </div>
                     <div class="choice__type">
                         <p class="caption ch">Тип стекла:</p>
-                        <input class="radio" type="radio" id="usual" value="usual" name="type" checked>
+                        <input class="radio" type="radio" id="usual" name="type" checked>
                         <label class="label" for="usual">Обычное</label>
                         <br>
-                        <input class="radio" type="radio" id="optiwhite" value="optiwhite" name="type">
+                        <input class="radio" type="radio" id="optiwhite" name="type">
                         <label class="label" for="optiwhite">Optiwhite</label>
                     </div>
                 </div>
@@ -140,8 +137,8 @@
                         <span class="plus"></span>
                     </div>
                 </div>
-                <input class="btn" value="Рассчитать" type="submit" name="calc">
-            </form>
+                <a href="#" class="btn" >Рассчитать</a>
+            </div>
         </div>
         <div class="payment">
             <div class="container">
@@ -655,6 +652,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/messages_ru.js"></script>
+    <script src="js/sessvars.js"></script>
     <script src="js/script.js"></script>
 
 </div>

@@ -194,10 +194,10 @@
         $('.home-form .btn').click(function () {
             $('.payment').css('display', 'block');
 
-            /*var metr = $('.home-form .area__input .inp').val(),
+            var metr = $('.home-form .area__input .inp').val(),
                 sum = 0;
 
-            if ($('#oraque').prop("checked")) {
+            if ($('#opaque').prop("checked")) {
                 sum += 2000;
             } else if ($('#transparent').prop("checked")) {
                 sum = 0;
@@ -210,8 +210,11 @@
             }
 
             sum *= metr;
-            $.session.set('sum', sum);*/
+            sessvars.money = {price: sum + "руб."};
+
         });
+
+        $('.success-info .gold').text(sessvars.money.price);
 
         $('.close').click(function () {
             if ($(this).hasClass("pay")) {

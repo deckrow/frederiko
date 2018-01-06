@@ -18,7 +18,7 @@
     .home { min-height: 701px }
 
     .home-title, .home-title .gold { font-size: 54px; font-weight: 500 }
-    .home-title { padding-top: 116px; }
+    .home-title { padding: 116px 0 0; }
 
     .home-form { padding: 27px 42px 29px; width: 470px; margin-top: 40px; height: auto }
     .home-form__title { text-align: center; font-weight: 500 }
