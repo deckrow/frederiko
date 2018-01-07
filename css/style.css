@@ -27,7 +27,7 @@ img { border: none; vertical-align: middle; }
 .big-title:before { content: url(../img/line.png); position: relative; margin: 0 35px 0 26px; top: -5px; }
 
 .header { position: absolute; top: 25px; left: 0; right: 0; z-index: 111; }
-.header .logo { float: left; }
+.header .logo { float: left; margin-right: 95px; }
 .header .nav { float: left; }
 .header .contact { float: right; }
 
@@ -36,8 +36,8 @@ img { border: none; vertical-align: middle; }
 .logo-info__link { text-decoration: none; color: #00a3fb; font-size: 29px; letter-spacing: -1px; }
 .logo-info__text { color: #ffffff; font-size: 11px; font-weight: 400; line-height: 14px; padding-left: 2px; font-style: italic; }
 
-.nav { width: 741px; height: 51px; list-style: none; text-align: center; }
-.nav__item { display: inline-block; margin-right: 41px; }
+.nav { height: 51px; list-style: none; text-align: center; }
+.nav__item { display: inline-block; margin-right: 51px; }
 .nav__item.active .nav__link { color: #fcc936; }
 .nav__item:hover .nav__link { color: #fcc936; }
 .nav__item:last-child { margin-right: 0; }
@@ -209,10 +209,9 @@ sup { font-size: 8px; }
 .all-products__block:last-child.all-products__img { float: right; }
 .all-products__img { float: left; margin-right: 9px; position: relative; }
 .all-products__img.big { margin-right: 11px; }
-.all-products__img.right { right: 2px; float: right; }
 .all-products__img:last-child { margin-right: 0; }
 .all-products__img:hover .img-hover { display: block; background: rgba(255, 255, 255, 0.85); }
-.all-products__moreinfo { float: left; }
+.all-products__moreinfo { float: left; margin-right: 157px; }
 .all-products__moreinfo p { color: #fff; font-size: 17px; font-weight: bold; padding-top: 52px; line-height: 35px; }
 .all-products__moreinfo button.btn { margin: 17px 0 0 0; }
 
@@ -224,12 +223,13 @@ sup { font-size: 8px; }
 .accord-header p { font-size: 17px; color: #fff; font-weight: 600; }
 .accord-header:after { content: url(../img/plus.png); position: absolute; right: 19px; top: 16px; }
 
+.reviews { position: relative; }
 .reviews.box { padding-top: 70px; }
 .reviews .big-title { padding-bottom: 48px; }
 .reviews-slide { margin-bottom: 33px; overflow: hidden; }
 .reviews-slide::-webkit-scrollbar-thumb { width: 500px; }
 
-@-moz-document url-prefix() { .reviews-slide { margin-bottom: 35px; } }
+/*@-moz-document url-prefix() .reviews-slide margin-bottom: 35px */
 .review-view { list-style: none; }
 .review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; }
 .review-view__item p.review-title { font-size: 17px; font-weight: bold; padding-bottom: 8px; }
@@ -245,7 +245,27 @@ sup { font-size: 8px; }
 .hide-text { display: none; position: absolute; bottom: 10px; cursor: pointer; font-size: 15px; font-weight: 600; color: #fcc936; border: none; background: #fff; z-index: 4; }
 .hide-text:before { content: url("../img/gold-plus.png"); position: relative; top: 2px; margin-right: 10px; }
 
+.white-grain-big-left, .white-grain-big-right { position: absolute; top: 0; bottom: 0; width: 200px; z-index: 111; }
+
+.white-grain-big-left { left: 0; background-image: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%); }
+
+.white-grain-big-right { right: 0; background-image: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%); }
+
 .white-grain { position: absolute; display: none; top: 70%; right: 0; left: 0; bottom: 0; z-index: 3; background-image: linear-gradient(to top, #ffffff 0%, #ffffff 12%, rgba(255, 255, 255, 0) 100%); }
+
+.reviews-slide { background-color: #fff; width: 100%; margin: auto; overflow: auto; }
+
+.myscroll { overflow: hidden; position: relative; }
+
+.myscroll .bar { background-color: #ddd; position: absolute; }
+
+.myscroll { padding-bottom: 30px; }
+
+.myscroll .h { height: 2px; bottom: 0; }
+
+.myscroll .slider { background-color: #fcc936; position: absolute; }
+
+.myscroll .h .slider { height: 100%; }
 
 .footer-form { text-align: center; margin-bottom: 68px; }
 .footer-form .container { position: relative; }

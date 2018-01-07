@@ -56,12 +56,9 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/sessvars.js"></script>
-    <script src="js/script.js"></script>
+    <script>$('.title .gold').text(sessvars.money.price);</script>
 
 </div>
 

@@ -87,6 +87,7 @@ img
     z-index: 111
     .logo
         float: left
+        margin-right: 95px
     .nav
         float: left
     .contact
@@ -112,13 +113,12 @@ img
             font-style: italic
 
 .nav
-    width: 741px
     height: 51px
     list-style: none
     text-align: center
     &__item
         display: inline-block
-        margin-right: 41px
+        margin-right: 51px
     &__item.active .nav__link
         color: #fcc936
     &__item:hover .nav__link
@@ -684,9 +684,6 @@ sup
         position: relative
     &__img.big
         margin-right: 11px
-    &__img.right
-        right: 2px
-        float: right
     &__img:last-child
         margin-right: 0
     &__img:hover .img-hover
@@ -694,6 +691,7 @@ sup
         background: rgba(255, 255, 255, 0.85)
     &__moreinfo
         float: left
+        margin-right: 157px
         & p
             color: #fff
             font-size: 17px
@@ -734,6 +732,7 @@ sup
 
 // reviews -------------------------------------------------------------------------------------------------------------
 .reviews
+    position: relative
     &.box
         padding-top: 70px
     .big-title
@@ -744,9 +743,9 @@ sup
     &-slide::-webkit-scrollbar-thumb
         width: 500px
 
-@-moz-document url-prefix()
+/*@-moz-document url-prefix()
     .reviews-slide
-        margin-bottom: 35px
+        margin-bottom: 35px*/
 
 .review-view
     list-style: none
@@ -798,6 +797,21 @@ sup
         top: 2px
         margin-right: 10px
 
+.white-grain-big-left, .white-grain-big-right
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 200px
+    z-index: 111
+
+.white-grain-big-left
+    left: 0
+    background-image: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+
+.white-grain-big-right
+    right: 0
+    background-image: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+
 .white-grain
     position: absolute
     display: none
@@ -807,6 +821,37 @@ sup
     bottom: 0
     z-index: 3
     background-image: linear-gradient(to top, #ffffff 0%, #ffffff 12%, rgba(255, 255, 255, 0) 100%)
+
+
+.reviews-slide
+    background-color: #fff
+    width: 100%
+    margin: auto
+    overflow: auto
+
+
+.myscroll
+    overflow: hidden
+    position: relative
+
+.myscroll .bar
+    background-color: #ddd
+    position: absolute
+
+.myscroll
+    padding-bottom: 30px
+
+.myscroll .h
+    height: 2px
+    bottom: 0
+
+.myscroll .slider
+    background-color: #fcc936
+    position: absolute
+
+.myscroll .h .slider
+    height: 100%
+
 // reviews end ---------------------------------------------------------------------------------------------------------
 
 // footer-form ---------------------------------------------------------------------------------------------------------
