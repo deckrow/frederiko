@@ -261,11 +261,11 @@ sup { font-size: 8px; }
 
 .myscroll { padding-bottom: 30px; }
 
-.myscroll .h { height: 2px; bottom: 0; }
+.myscroll .h { height: 7px; bottom: 0; border: 2.5px solid #fff; }
 
 .myscroll .slider { background-color: #fcc936; position: absolute; }
 
-.myscroll .h .slider { height: 100%; }
+.myscroll .h .slider { height: 7px; top: -2px; }
 
 .footer-form { text-align: center; margin-bottom: 68px; }
 .footer-form .container { position: relative; }

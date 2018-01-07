@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71c85638-9e00-4efd-8800-ebc33f66d252" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/55aa2facc0a3cf9ba50d9e096050a0b0477462ff/style.sassc" afterPath="$PROJECT_DIR$/.sass-cache/55aa2facc0a3cf9ba50d9e096050a0b0477462ff/style.sassc" />
-      <change beforePath="$PROJECT_DIR$/css/media-style.css" afterPath="$PROJECT_DIR$/css/media-style.css" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/img/img-slider.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-1.4.2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.nicescroll.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.validate.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
       <change beforePath="$PROJECT_DIR$/sass/style.sass" afterPath="$PROJECT_DIR$/sass/style.sass" />
-      <change beforePath="$PROJECT_DIR$/slick/ajax-loader.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/config.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.less" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.less" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/success.php" afterPath="$PROJECT_DIR$/success.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media-style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media-style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/media-style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -111,13 +87,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            <state relative-caret-position="665">
+              <caret line="854" column="13" lean-forward="false" selection-start-line="854" selection-start-column="13" selection-end-line="854" selection-end-column="13" />
               <folding>
-                <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+                <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +131,8 @@
       <find>close</find>
       <find>all-prod</find>
       <find>mys</find>
-      <find>back</find>
       <find>.logo</find>
+      <find>back</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -181,8 +157,8 @@
         <option value="$PROJECT_DIR$/success.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/js/myscroll.js" />
-        <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/css/media-style.css" />
+        <option value="$PROJECT_DIR$/sass/style.sass" />
       </list>
     </option>
   </component>
@@ -318,12 +294,12 @@
       <workItem from="1515252802845" duration="198000" />
       <workItem from="1515253419025" duration="7843000" />
       <workItem from="1515273230257" duration="796000" />
-      <workItem from="1515321912902" duration="34125000" />
+      <workItem from="1515321912902" duration="35067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213715000" />
+    <option name="totallyTimeSpent" value="214657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
@@ -366,7 +342,7 @@
         <state relative-caret-position="4392">
           <caret line="244" column="17" lean-forward="false" selection-start-line="244" selection-start-column="17" selection-end-line="244" selection-end-column="17" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -441,7 +417,7 @@
         <state relative-caret-position="12960">
           <caret line="720" column="9" lean-forward="true" selection-start-line="720" selection-start-column="9" selection-end-line="720" selection-end-column="9" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -477,7 +453,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -513,7 +489,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -549,7 +525,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -585,7 +561,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -621,7 +597,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -657,7 +633,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -708,7 +684,7 @@
         <state relative-caret-position="470">
           <caret line="529" column="9" lean-forward="true" selection-start-line="529" selection-start-column="9" selection-end-line="529" selection-end-column="9" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -754,7 +730,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
           </folding>
         </state>
       </provider>
@@ -817,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
@@ -876,21 +842,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-          <folding>
-            <marker date="1515366094419" expanded="true" signature="22717:22757" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/media-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="854" column="13" lean-forward="false" selection-start-line="854" selection-start-column="13" selection-end-line="854" selection-end-column="13" />
+          <folding>
+            <marker date="1515369138258" expanded="true" signature="22759:22799" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
