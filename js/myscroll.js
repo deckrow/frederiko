@@ -22,9 +22,9 @@ function scrollLeft() {
 }
 function scrollWidth() {
     var width = window.innerWidth;
-    if (width > 992)
+    if (width > 1140)
         return 1140 + 'px';
-    else if (width <= 992 && width > 768)
+    else if (width <= 1140 && width > 768)
         return (width - 65) + 'px';
     else if (width <= 768 && width > 420)
         return (width - 48) + 'px';

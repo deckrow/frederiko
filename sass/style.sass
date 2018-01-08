@@ -256,12 +256,9 @@ sup
                 font-size: 18px
                 font-weight: 500
                 font-family: 'Roboto', sans-serif
-                text-align: center
+                text-align: right
+                padding-right: 35px
                 -moz-appearance: textfield
-            input[type=number]:after
-                content: "m2"
-                left: 10px
-                top: 10px
             input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button
                 -webkit-appearance: none
                 appearance: none
@@ -397,6 +394,16 @@ sup
             display: block
         &__item:last-child
             border-bottom: none
+
+.meter
+    position: absolute
+    top: calc(50% - 8px)
+    left: calc(50% + 10px)
+    font-weight: 500
+    font-size: 16px
+    pointer-events: none
+    sub
+        font-size: 10px
 
 .close
     position: absolute
@@ -888,11 +895,13 @@ sup
         padding-top: 81px
     .form
         margin-top: 43px
+        position: relative
     .input
         width: 300px
         margin-right: 8px
         padding: 13px 25px
         font-size: 17px
+        position: relative
     .input::-webkit-input-placeholder
         font-size: 17px
         color: #000e20
@@ -924,6 +933,15 @@ sup
             border-bottom: 1px dotted #fff
         a:hover
             border-bottom: none
+
+#ima_kl-error, #telefon_lida-error
+    position: absolute
+    top: 50px
+    color: red
+
+.margin-none
+    margin-right: 0
+
 // footer-form end -----------------------------------------------------------------------------------------------------
 
 //footer ---------------------------------------------------------------------------------------------------------------

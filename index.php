@@ -3,19 +3,34 @@
 
     if (isset($_POST["send"])) {
         $from = htmlspecialchars( "Website");
-        $to = htmlspecialchars("maft.den@gmail.com");
+        $to = htmlspecialchars("a.semenova@remontexpress.ru");
         $subject = htmlspecialchars("Душевая кабина.");
-        $name = htmlspecialchars($_POST["name"]);
-        $phone = htmlspecialchars($_POST["phone"]);
+        $name = htmlspecialchars($_POST["ima_kl"]);
+        $phone = htmlspecialchars($_POST["telefon_lida"]);
         $message = "Имя: " . $name . " Телефон: " . $phone;
 
-        $_SESSION["name"] = $name;
-        $_SESSION["phone"] = $name;
+        $_SESSION["ima_kl"] = $name;
+        $_SESSION["telefon_lida"] = $phone;
 
         $headers = "From: $from\r\nReply-to: $from \r\nContent-type:text/plain; charset=utf-8\r\n";
         $subject = "=?uff-8?B?" . base64_encode($subject) . "?=";
         mail ($to, $subject, $message, $headers);
         header ("Location: success.php?send=1");
+        exit;
+    }
+
+    if (isset($_POST["send2"])) {
+        $from = htmlspecialchars( "Website");
+        $to = htmlspecialchars("a.semenova@remontexpress.ru");
+        $subject = htmlspecialchars("Стекло для ванной");
+        $name = htmlspecialchars($_POST["ima_kl"]);
+        $phone = htmlspecialchars($_POST["telefon_lida"]);
+        $message = "Имя: " . $name . " Телефон: " . $phone;
+
+        $headers = "From: $from\r\nReply-to: $from \r\nContent-type:text/plain; charset=utf-8\r\n";
+        $subject = "=?uff-8?B?" . base64_encode($subject) . "?=";
+        mail ($to, $subject, $message, $headers);
+        header ("Location: success.php?send=2");
         exit;
     }
 
@@ -111,6 +126,7 @@
                     <div class="area__input clearfix">
                         <span class="minus"></span>
                         <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000" pattern="\d+[м]?|\d+\.\d+[м]?">
+                        <p class="meter">м<sub>2</sub></p>
                         <span class="plus"></span>
                     </div>
                 </div>
@@ -122,9 +138,9 @@
                 <div class="close pay"></div>
                 <div class="form-info">
                     <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                    <form action="#" class="form clearfix" id="phone-form__main" name="telefon_lida" method="post">
-                        <input type="text" class="input" placeholder="Введите ваше имя" name="name" value="<?php echo $_SESSION["name"] ?>">
-                        <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone" value="<?php echo $_SESSION["phone"] ?>">
+                    <form action="#" class="form clearfix" id="phone-form__main" method="post">
+                        <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
+                        <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
                         <input type="submit" class="btn" value="Получить расчет" name="send">
                         <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
                     </form>
@@ -565,10 +581,10 @@
             <div class="grain"></div>
             <div class="form-info">
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                <form action="#" class="form clearfix" name="telefon_lida" id="phone-form__footer" method="post">
-                    <input type="text" class="input" placeholder="Введите ваше имя" name="name" minlength="2">
-                    <input type="text" class="input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone">
-                    <input type="submit" class="btn" value="Заказать бесплатный замер">
+                <form action="#" class="form clearfix" id="phone-form__footer" method="post">
+                    <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" minlength="2">
+                    <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida">
+                    <input type="submit" class="btn" value="Заказать бесплатный замер" name="send2">
                     <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
                 </form>
             </div>

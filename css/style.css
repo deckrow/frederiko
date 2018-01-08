@@ -76,8 +76,7 @@ sup { font-size: 8px; }
 .home-form .area { margin-top: 21px; padding-left: 4px; }
 .home-form .area .caption { float: left; line-height: 36px; }
 .home-form .area__input { float: left; width: 163px; height: 36px; border-radius: 3px; border: 1px solid #e0e5ef; margin-left: 19px; position: relative; }
-.home-form .area__input input[type=number] { height: 100%; width: 87px; border: none; font-size: 18px; font-weight: 500; font-family: "Roboto", sans-serif; text-align: center; -moz-appearance: textfield; }
-.home-form .area__input input[type=number]:after { content: "m2"; left: 10px; top: 10px; }
+.home-form .area__input input[type=number] { height: 100%; width: 87px; border: none; font-size: 18px; font-weight: 500; font-family: "Roboto", sans-serif; text-align: right; padding-right: 35px; -moz-appearance: textfield; }
 .home-form .area__input input[type=number]::-webkit-outer-spin-button, .home-form .area__input input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; }
 
 .label { display: inline-block; cursor: pointer; position: relative; margin-left: 34px; font-size: 13px; margin-bottom: 6px; line-height: 22px; }
@@ -116,6 +115,9 @@ sup { font-size: 8px; }
 .phone-menu .menu-list__item.active .menu-list__link:before { content: url(../img/line.png); position: relative; margin: 0 8px 0 14px; top: -5px; }
 .phone-menu .menu-list__link { font-size: 23px; color: #fff; padding: 25px 0; text-decoration: none; display: block; }
 .phone-menu .menu-list__item:last-child { border-bottom: none; }
+
+.meter { position: absolute; top: calc(50% - 8px); left: calc(50% + 10px); font-weight: 500; font-size: 16px; pointer-events: none; }
+.meter sub { font-size: 10px; }
 
 .close { position: absolute; top: 130px; right: 190px; border: 2px solid #fff; height: 40px; width: 40px; cursor: pointer; background: url("../img/close.png") no-repeat center center; }
 
@@ -274,8 +276,8 @@ sup { font-size: 8px; }
 
 .form-info { padding: 0 90px; }
 .form-info .title { font-size: 46px; font-weight: 500; color: #fff; padding-top: 81px; }
-.form-info .form { margin-top: 43px; }
-.form-info .input { width: 300px; margin-right: 8px; padding: 13px 25px; font-size: 17px; }
+.form-info .form { margin-top: 43px; position: relative; }
+.form-info .input { width: 300px; margin-right: 8px; padding: 13px 25px; font-size: 17px; position: relative; }
 .form-info .input::-webkit-input-placeholder { font-size: 17px; color: #000e20; font-family: "Roboto", sans-serif; font-weight: 300; }
 .form-info .input::-moz-placeholder { font-size: 17px; color: #000e20; font-family: "Roboto", sans-serif; font-weight: 300; }
 .form-info .input:-ms-input-placeholder { font-size: 17px; color: #000e20; font-family: "Roboto", sans-serif; font-weight: 300; }
@@ -283,6 +285,10 @@ sup { font-size: 8px; }
 .form-info .rights { font-size: 10px; color: #fff; float: right; padding: 10px 30px 0 0; }
 .form-info .rights a { font-size: 10px; text-decoration: none; border-bottom: 1px dotted #fff; }
 .form-info .rights a:hover { border-bottom: none; }
+
+#ima_kl-error, #telefon_lida-error { position: absolute; top: 50px; color: red; }
+
+.margin-none { margin-right: 0; }
 
 .footer .container { padding: 52px 41px 16px; border-top: 2px solid #005dbb; border-right: 2px solid #005dbb; border-left: 2px solid #005dbb; }
 .footer .footer-info { padding-bottom: 32px; }

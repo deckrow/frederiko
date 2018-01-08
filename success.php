@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +17,15 @@
     <div class="success">
         <div class="container">
             <div class="success-info">
-                <h1 class="title">Спасибо за вашу заявку. <br>  Стоимость стекла составляет <span class="gold"></span></h1>
+                <h1 class="title">
+                    <?php if ($_GET["send"] == 1)
+                            echo "Спасибо за вашу заявку. <br>  Стоимость стекла составляет <span class=\"gold\"></span>";
+                          elseif ($_GET["send"] == 2)
+                            echo "Спасибо за вашу заявку.";
+                          else
+                            echo "";
+                    ?>
+                </h1>
                 <p class="text">В течение 1 рабочего дня с вами свяжется наш менеджер для <br> уточнения информации.</p>
                 <a class="btn" href="index.php">Вернуться на главную</a>
             </div>

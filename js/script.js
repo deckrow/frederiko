@@ -101,11 +101,10 @@
     $(document).ready(function () {
         $(".all-products__img .accord-header").click(function () {
             if($(this).next("div").is(":visible")){
-                $(this).next("div").slideUp("slow");
+                $(this).next("div").css("display", 'none');
             }else{
-                $(".all-products__img .accord-content").slideUp("slow");
-
-                $(this).next("div").slideDown("slow");
+                $(".all-products__img .accord-content").css("display", 'none');
+                $(this).next("div").css("display", 'block');
             }
         });
     });
@@ -113,26 +112,33 @@
     $(document).ready(function () {
         $('#phone-form__footer').validate({
             rules: {
-                name: {
+                ima_kl: {
                     required: true,
                     minlength: 2
                 },
-                phone: {
+                telefon_lida: {
                     required: true,
                     phoneNumber: true
                 }
+            },
+            errorPlacement: function(error, element) {
+                error.insertBefore(element);
             }
+
         });
         $('#phone-form__main').validate({
             rules: {
-                name: {
+                ima_kl: {
                     required: true,
                     minlength: 2
                 },
-                phone: {
+                telefon_lida: {
                     required: true,
                     phoneNumber: true
                 }
+            },
+            errorPlacement: function(error, element) {
+                error.insertBefore(element);
             }
         });
         jQuery.validator.addMethod("phoneNumber", function (value, element) {
@@ -162,7 +168,6 @@
             sum *= metr;
             sessvars.money = {price: sum + "руб."};
         });
-        $('.success-info .gold').text(sessvars.money.price);
         $('.close').click(function () {
             if ($(this).hasClass("pay")) {
                 $('.payment').css('display', 'none');
