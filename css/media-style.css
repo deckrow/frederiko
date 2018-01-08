@@ -287,7 +287,7 @@
     .footer-form .form-info .rights, .footer-form .form-info .rights a { font-size: 9px }
     .footer-form { padding: 0 }
     .footer-form .container { padding: 0 20px }
-    .footer-form .form-info { padding-bottom: 29px }
+    .footer-form .form-info { padding: 0 0 29px }
     .footer-form .form-info .input { width: 100%; }
     .footer-form .form-info .btn { padding: 15px 16px }
 
