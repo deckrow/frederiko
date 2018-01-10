@@ -1,4 +1,14 @@
 (function($) {
+    // header ----------------------------------------------------------------------------------------------------------
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop () > 15) {
+                $('.header').addClass('fixed-header');
+            } else {
+                $('.header').removeClass('fixed-header');
+            }
+        });
+    });
     // input -----------------------------------------------------------------------------------------------------------
     $(document).ready(function () {
         $(".area__input").find("span").click(function () {
@@ -102,9 +112,12 @@
         $(".all-products__img .accord-header").click(function () {
             if($(this).next("div").is(":visible")){
                 $(this).next("div").css("display", 'none');
+                $('.accord-header__img', $(this)).css('transform', 'rotate(0deg)');
             }else{
                 $(".all-products__img .accord-content").css("display", 'none');
+                $('.accord-header__img').css('transform', 'rotate(0deg)');
                 $(this).next("div").css("display", 'block');
+                $('.accord-header__img', $(this)).css('transform', 'rotate(45deg)');
             }
         });
     });
@@ -142,7 +155,7 @@
             }
         });
         jQuery.validator.addMethod("phoneNumber", function (value, element) {
-            return this.optional(element) || /^\+{1}[7][0-6,9]\d{7}$/.test(value);
+            return this.optional(element) || /^[0-6,9]\d{9}$/.test(value);
         }, "Неверный формат телефона");
     });
     // click -----------------------------------------------------------------------------------------------------------
@@ -150,7 +163,6 @@
         $('.menu').click(function () {
            $('.phone-menu').css('display', 'block');
         });
-
         $('.home-form .btn').click(function () {
             $('.payment').css('display', 'block');
             var metr = $('.home-form .area__input .inp').val(),
@@ -173,6 +185,9 @@
                 $('.payment').css('display', 'none');
             } else if ($(this).hasClass("phone")) {
                 $('.phone-menu').css('display', 'none');
+            } else if ($(this).hasClass("pop-up")) {
+                $('.popup').css('display', 'none');
+                $('body').css('overflow', 'auto');
             }
         });
     });
@@ -188,6 +203,14 @@
             }
             return false;
         });
+    });
+    // popup -----------------------------------------------------------------------------------------------------------
+    $(document).ready(function () {
+       $('.privacy-policy').click(function (event) {
+           event.preventDefault();
+           $('body').css('overflow', 'hidden');
+           $('.popup').css('display', 'block');
+       });
     });
 })(jQuery);
 

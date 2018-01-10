@@ -370,8 +370,8 @@
                     <button class="rates-btn">Хочу такое же</button>
                 </div>
                 <div class="rates-info__right">
-                    <h3 class="rates-title white">Стекло Optiwhite</h3>
-                    <ul class="rates-list white">
+                    <h3 class="rates-title">Стекло Optiwhite</h3>
+                    <ul class="rates-list">
                         <li class="rates-list__item">
                             <p class="rates-list__text">Сверхпрочное, жаро и ударостойкое стекло</p>
                         </li>
@@ -385,7 +385,7 @@
                             <p class="rates-list__text">Подходит для больших площадей и черно-белых рисунков</p>
                         </li>
                     </ul>
-                    <div class="rates-price white">
+                    <div class="rates-price">
                         <span class="price-text">Стоимость:</span>
                         <span class="price-sum">19 300 <sub>руб.</sub></span>
                     </div>
@@ -412,7 +412,7 @@
             <div class="all-products">
                 <div class="all-products__block clearfix">
                     <div class="all-products__img big">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-bigimg1.jpg" alt="">
                             <div class="img-hover">
@@ -422,7 +422,7 @@
                         </div>
                     </div>
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg1.jpg" alt="">
                             <div class="img-hover">
@@ -432,7 +432,7 @@
                         </div>
                     </div>
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg2.jpg" alt="">
                             <div class="img-hover">
@@ -444,7 +444,7 @@
                 </div>
                 <div class="all-products__block clearfix">
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg3.jpg" alt="">
                             <div class="img-hover">
@@ -454,7 +454,7 @@
                         </div>
                     </div>
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg4.jpg" alt="">
                             <div class="img-hover">
@@ -464,7 +464,7 @@
                         </div>
                     </div>
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg5.jpg" alt="">
                             <div class="img-hover">
@@ -474,7 +474,7 @@
                         </div>
                     </div>
                     <div class="all-products__img">
-                        <div class="accord-header"><p>Скинали для кухни</p></div>
+                        <div class="accord-header"><p>Скинали для кухни</p><img class="accord-header__img" src="img/plus.png" alt=""></div>
                         <div class="accord-content">
                             <img src="img/content-smallimg6.jpg" alt="">
                             <div class="img-hover">
@@ -612,7 +612,7 @@
                     <div class="address__text">
                         <span class="text">г.Москва БЦ "Вега" <br> (ул. Вербная, д.8с1, оф.207)</span>
                         <br>
-                        <a class="link" href="#">info@frederiko.ru</a>
+                        <a class="link" href="mailto:maft.den@gmail.com">info@frederiko.ru</a>
                     </div>
                 </address>
                 <div class="work-hours clearfix">
@@ -625,7 +625,7 @@
                 </div>
                 <div class="back-to">
                     <div class="back-to__img">
-                        <a href="#header">
+                        <a class="scroll" href="#header">
                             <img class="footer-img" src="img/back-to-top.png" alt="">
                         </a>
                     </div>
@@ -643,6 +643,46 @@
         </div>
     </div>
     <!-- footer end -->
+
+    <!-- popups -->
+    <div class="popup">
+        <div class="container">
+            <div class="close pop-up"></div>
+            <h3 class="popup__header">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+            <p class="popup__text">г.Москва</p>
+            <p class="popup__text">«15» февраля 2017 г.</p>
+            <p class="popup__text">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт компании «Флагман Ремонта», расположенный на доменном имени flagmanremonta.ru, может получить о Пользователе во время использования сайта, программ и продуктов компании.</p>
+            <h4 class="popup__title">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</h4>
+            <ul class="popup-list">
+                <li>
+                    <p class="popup__text">1.1 В настоящей Политике конфиденциальности используются следующие термины:</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.1. «Администрация сайта flagmanremonta.ru (далее – Администрация сайта) » – уполномоченные сотрудники на управления сайтом, действующие от имени Название организации, которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.2. «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+                    </p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.5. «Пользователь сайта flagmanremonta.ru (далее ? Пользователь)» – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт flagmanremonta.ru.</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.</p>
+                </li>
+                <li>
+                    <p class="popup__text">1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- popups end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>

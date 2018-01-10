@@ -50,6 +50,8 @@ img
     border: none
     vertical-align: middle
 
+textarea:focus, input:focus
+    outline: none
 
 .clearfix
     &:before, &:after
@@ -84,7 +86,7 @@ img
     top: 25px
     left: 0
     right: 0
-    z-index: 111
+    z-index: 1111
     .logo
         float: left
         margin-right: 95px
@@ -92,6 +94,24 @@ img
         float: left
     .contact
         float: right
+
+.header.fixed-header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background: #ffffff
+    padding: 10px 0
+    .nav__link
+        color: #000
+    .contact__number
+        color: #005dbb
+    .contact__workdays, .logo-info__text
+        color: grey
+    .menu
+        border: 2px solid #005dbb
+    .menu .line
+        background: #005dbb
 
 .logo
     &-img
@@ -151,7 +171,7 @@ img
         background: transparent
         cursor: pointer
     &__call:hover
-        border-bottom: none
+        border-bottom: 1px dotted transparent
 
 .menu
     display: none
@@ -214,7 +234,8 @@ sup
     text-align: center
     &__title
         color: #000e20
-        font-size: 25px
+        font-size: 24px
+        font-weight: 500
         text-align: left
     .caption
         font-size: 15px
@@ -319,7 +340,6 @@ sup
 
 .btn
     padding: 16px 42px
-    box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
     border-radius: 25px
     background-color: #fcc936
     font-size: 18px
@@ -328,6 +348,8 @@ sup
     margin: 30px auto 0
     display: block
     cursor: pointer
+    &:hover
+        box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
 
 .payment
     position: absolute
@@ -336,7 +358,7 @@ sup
     left: 0
     bottom: 0
     background: #005dbb
-    z-index: 112
+    z-index: 1112
     display: none
     .container
         position: relative
@@ -362,7 +384,7 @@ sup
     bottom: 0
     background: #005dbb
     display: none
-    z-index: 112
+    z-index: 1112
     .container
         position: relative
     .menu-list
@@ -516,11 +538,12 @@ sup
             color: #000e20
             padding: 15px 40px
             margin-top: 16px
-            box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
             border-radius: 25px
             background-color: #fcc936
             cursor: pointer
             border: none
+            &:hover
+                box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
 
 .slider-switch
     position: absolute
@@ -594,10 +617,11 @@ sup
         padding: 40px 68px 0 98px
         border: 2px solid #005dbb
         text-align: center
-    &__left
-        background: #ffffff
-    &__right
-        background: #005dbb
+        background: #fff
+        &:hover
+            background: #005dbb
+            .rates-title, .rates-list__text, .rates-price .price-text, .rates-price .price-sum, .rates-list__item:before
+                color: #fff
 
 .rates-title
     font-size: 31px
@@ -660,11 +684,12 @@ sup
     color: #000e20
     margin-bottom: 62px
     padding: 15px 40px
-    box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
     border-radius: 25px
     background-color: #fcc936
     cursor: pointer
     border: none
+    &:hover
+        box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
 // rates end -----------------------------------------------------------------------------------------------------------
 
 // add products --------------------------------------------------------------------------------------------------------
@@ -730,15 +755,17 @@ sup
 .accord-header
     display: none
     cursor: pointer
+    position: relative
     p
         font-size: 17px
         color: #fff
         font-weight: 600
-    &:after
-        content: url(../img/plus.png)
+    &__img
         position: absolute
-        right: 19px
-        top: 16px
+        right: 25px
+        top: 3px
+
+
 // add products end ----------------------------------------------------------------------------------------------------
 
 // reviews -------------------------------------------------------------------------------------------------------------
@@ -1058,4 +1085,39 @@ sup
         position: relative
         float: none
         padding-bottom: 18px
-// success end -------------------------------------------------------------------------------------------------------------
+// success end ---------------------------------------------------------------------------------------------------------
+
+// popups --------------------------------------------------------------------------------------------------------------
+.popup
+    width: 100%
+    min-height: 100%
+    background-color: rgba(0,0,0,0.5)
+    display: none
+    position: fixed
+    z-index: 1113
+    top: 0
+    .container
+        background: #fff
+        padding: 50px 50px 30px
+        margin-top: 50px
+        border: 2px solid #005dbb
+        position: relative
+    &__header
+        text-align: center
+        font-size: 31px
+    &__title
+        font-size: 20px
+        text-transform: uppercase
+        padding: 10px 0
+    &__text
+        font-size: 16px
+        padding-bottom: 10px
+    .popup-list
+        list-style: none
+
+.close.pop-up
+    border: 2px solid #005dbb
+    top: 25px
+    right: 25px
+    background: url(../img/close.png) no-repeat center center #005dbb
+// popups --------------------------------------------------------------------------------------------------------------

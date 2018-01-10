@@ -171,6 +171,8 @@
     .footer .work-hours { margin-right: 0; }
 
     .back-to { position: absolute; right: 35px; bottom: 35px; }
+
+    .success { height: 100% }
 }
 
 @media screen and (max-width: 720px) {
@@ -199,7 +201,7 @@
     .img-hover p { display: none; }
     .all-products { padding: 0; }
     .all-products__img, .all-products__img.big { margin-right: 0; width: 100%; padding: 13px 0; border-bottom: 1px solid #0082d6  }
-    .all-products__img.big .accord-content img, .all-products__img.right img { width: auto; height: auto }
+    .all-products__img.big .accord-content img, .all-products__img.right img { width: 235px; height: 235px }
     .all-products__img .accord-content img { width: auto; height: auto }
     .all-products__block { margin-bottom: 0 }
     .all-products__moreinfo { text-align: center; margin-right: 0; width: 100%}
@@ -333,7 +335,7 @@
 
     .privacy-policy { bottom: 45px }
 
-    .success { padding: 150px 15px 0 }
+    .success { padding: 70px 15px 0; }
 
     .success-info .title, .success-info .gold { font-size: 24px }
     .success-info .text { padding-bottom: 0; font-size: 19px }
@@ -341,7 +343,7 @@
 
     .success-footer .logo, .success-footer .address, .success-footer .work-hours { flex-basis: 100% !important; margin-bottom: 20px }
     .success-footer .copyright-info { padding-top: 0 }
-    .success-footer .privacy-policy { padding-bottom: 0 }
+    .success-footer .privacy-policy { padding-bottom: 0; bottom: 55px }
     .success-footer .copyright { text-align: left }
 
 }
