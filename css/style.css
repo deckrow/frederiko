@@ -249,8 +249,8 @@ sup { font-size: 8px; }
 .reviews-slide::-webkit-scrollbar-thumb { width: 500px; }
 
 /*@-moz-document url-prefix() .reviews-slide margin-bottom: 35px */
-.review-view { list-style: none; height: 500px; }
-.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; pointer-events: none; }
+.review-view { list-style: none; }
+.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; }
 .review-view__item p.review-title { font-size: 17px; font-weight: bold; padding-bottom: 8px; }
 .review-view__item p.review-text { font-size: 17px; line-height: 22px; }
 .review-view__item:last-child { margin-right: 0; }

@@ -43,6 +43,7 @@ function updateScrollPosition(slider, offsetVal) {
 }
 function drag_start(e) {
     var slider = e.target;
+    console.log(e.target);
     var maxLeft = slider.parentNode.offsetWidth - slider.offsetWidth;
     dragParams = {
         clientX: e.clientX,
@@ -96,6 +97,8 @@ function addScroller(isX, myscroll) {
     bar.appendChild(slider);
     bar.addEventListener('click', bar_clicked);
     myscroll.appendChild(bar);
+    /*myscroll.addEventListener('mousedown', drag_start);
+    myscroll.addEventListener('mouseup', drag_end);*/
     slider.addEventListener('mousedown', drag_start);
     slider.addEventListener('mouseup', drag_end);
     bar.addEventListener('mouseup', drag_end);
