@@ -60,7 +60,7 @@ function drag_end(e) {
 function bar_clicked(e) {
     var bar = e.target;
     var slider = bar.getElementsByClassName('slider')[0];
-    if (bar.className == 'h bar') {
+    if (bar.className === 'h bar') {
         var maxSlide = bar.offsetWidth - slider.offsetWidth;
         var sliderX = e.offsetX - (slider.offsetWidth / 2);
         sliderX = Math.max(0, Math.min(sliderX, maxSlide));
@@ -73,10 +73,10 @@ function init_myscroll() {
     for (var i = 0; i < myscrolls.length; i++) {
         var myscroll = myscrolls[i];
         var style = window.getComputedStyle(myscroll);
-        if (style.overflowY == 'scroll' || (style.overflowY == 'auto' && myscroll.offsetHeight < myscroll.scrollHeight)) {
+        if (style.overflowY === 'scroll' || (style.overflowY === 'auto' && myscroll.offsetHeight < myscroll.scrollHeight)) {
             addScroller(false, myscroll);
         }
-        if (style.overflowX == 'scroll' || (style.overflowX == 'auto' && myscroll.offsetWidth < myscroll.scrollWidth)) {
+        if (style.overflowX === 'scroll' || (style.overflowX === 'auto' && myscroll.offsetWidth < myscroll.scrollWidth)) {
             addScroller(true, myscroll);
         }
     }
@@ -89,13 +89,13 @@ function addScroller(isX, myscroll) {
     var scrollDim = isX ? myscroll.scrollWidth : myscroll.scrollHeight;
     var sliderPx = Math.max(30, (offsetDim * offsetDim / scrollDim));
     slider.style.width = 100 * sliderPx / offsetDim + '%';
-    slider.className = 'slider';
+    slider.className = 'slider slider-review';
     bar.className = isX ? 'h bar' : 'v bar';
     bar.style.left = scrollLeft() + 'px';
     bar.style.width = scrollWidth();
     bar.appendChild(slider);
-    myscroll.appendChild(bar);
     bar.addEventListener('click', bar_clicked);
+    myscroll.appendChild(bar);
     slider.addEventListener('mousedown', drag_start);
     slider.addEventListener('mouseup', drag_end);
     bar.addEventListener('mouseup', drag_end);

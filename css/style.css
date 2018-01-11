@@ -94,9 +94,11 @@ sup { font-size: 8px; }
 
 .radio { display: none; }
 
-.radio:checked + .label:before { content: "•"; color: #000e20; font-size: 65px; line-height: 24px; z-index: 2; }
+.radio:checked + .label:before { content: ""; background: #000e20; width: 12px; height: 12px; top: 3px; left: -29px; z-index: 2; }
 
-.radio:not(:checked) + .label:before { z-index: 5; }
+.radio:not(:checked) + .label:before { content: ""; background: #000e20; width: 0; height: 0; z-index: 2; }
+
+.circle { content: ""; display: inline-block; width: 20px; height: 20px; position: absolute; left: -32px; background: #fff; border: 1px solid #e0e5ef; border-radius: 50%; box-shadow: 3px 4px 15px 1px rgba(0, 14, 32, 0.1); }
 
 .minus, .plus { display: inline-block; text-align: center; font-size: 33px; line-height: 30px; color: #fff; width: 37px; height: 100%; border: 1px solid #e0e5ef; background-position: center center; background-repeat: no-repeat; background-color: #e0e5ef; cursor: pointer; }
 
@@ -107,13 +109,15 @@ sup { font-size: 8px; }
 .btn { padding: 16px 42px; border-radius: 25px; background-color: #fcc936; font-size: 18px; color: #000e20; border: none; margin: 30px auto 0; display: block; cursor: pointer; }
 .btn:hover { box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); }
 
-.payment { position: absolute; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; z-index: 1112; display: none; }
-.payment .container { position: relative; }
-.payment .form-info { text-align: center; padding-top: 125px; }
-.payment .form-info .title { padding-top: 100px; font-size: 35px; }
-.payment .form-info .form { margin-top: 20px; }
-.payment .form-info .btn { display: block; margin: 20px auto 0; }
-.payment .form-info .rights { float: none; }
+.payment, .payment-more { position: absolute; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; z-index: 1112; display: none; }
+.payment .container, .payment-more .container { position: relative; }
+.payment .form-info, .payment-more .form-info { text-align: center; padding-top: 125px; }
+.payment .form-info .title, .payment-more .form-info .title { padding-top: 100px; font-size: 35px; }
+.payment .form-info .form, .payment-more .form-info .form { margin-top: 20px; }
+.payment .form-info .btn, .payment-more .form-info .btn { display: block; margin: 20px auto 0; }
+.payment .form-info .rights, .payment-more .form-info .rights { float: none; }
+
+.payment-more { position: fixed; }
 
 .phone-menu { position: absolute; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; display: none; z-index: 1112; }
 .phone-menu .container { position: relative; }
@@ -245,8 +249,8 @@ sup { font-size: 8px; }
 .reviews-slide::-webkit-scrollbar-thumb { width: 500px; }
 
 /*@-moz-document url-prefix() .reviews-slide margin-bottom: 35px */
-.review-view { list-style: none; }
-.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; }
+.review-view { list-style: none; height: 500px; }
+.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; pointer-events: none; }
 .review-view__item p.review-title { font-size: 17px; font-weight: bold; padding-bottom: 8px; }
 .review-view__item p.review-text { font-size: 17px; line-height: 22px; }
 .review-view__item:last-child { margin-right: 0; }
@@ -350,10 +354,10 @@ sup { font-size: 8px; }
 .success-footer .text, .success-footer .privacy-policy, .success-footer .copyright, .success-footer .link { color: #fff; text-align: left; }
 .success-footer .privacy-policy { display: block; position: relative; float: none; padding-bottom: 18px; }
 
-.popup { width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; position: fixed; z-index: 1113; top: 0; }
-.popup .container { background: #fff; padding: 50px 50px 30px; margin-top: 50px; border: 2px solid #005dbb; position: relative; }
+.popup { width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; position: fixed; z-index: 1113; top: 0; right: 0; left: 0; bottom: 0; }
+.popup .container { background: #fff; padding: 50px 50px 30px; margin-top: 50px; margin-bottom: 50px; border: 2px solid #005dbb; position: relative; }
 .popup__header { text-align: center; font-size: 31px; }
-.popup__title { font-size: 20px; text-transform: uppercase; padding: 10px 0; }
+.popup__title { font-size: 17px; text-transform: uppercase; padding: 10px 0; }
 .popup__text { font-size: 16px; padding-bottom: 10px; }
 .popup .popup-list { list-style: none; }
 

@@ -154,6 +154,21 @@
                 error.insertBefore(element);
             }
         });
+        $('#phone-form__btn').validate({
+            rules: {
+                ima_kl: {
+                    required: true,
+                    minlength: 2
+                },
+                telefon_lida: {
+                    required: true,
+                    phoneNumber: true
+                }
+            },
+            errorPlacement: function(error, element) {
+                error.insertBefore(element);
+            }
+        });
         jQuery.validator.addMethod("phoneNumber", function (value, element) {
             return this.optional(element) || /^[0-6,9]\d{9}$/.test(value);
         }, "Неверный формат телефона");
@@ -162,6 +177,11 @@
     $(document).ready(function () {
         $('.menu').click(function () {
            $('.phone-menu').css('display', 'block');
+        });
+        $('.pay-more').click(function () {
+            event.preventDefault();
+            $('body').css('overflow', 'hidden');
+            $('.payment-more').css({'display': 'block', 'overflow': 'auto'});
         });
         $('.home-form .btn').click(function () {
             $('.payment').css('display', 'block');
@@ -188,6 +208,9 @@
             } else if ($(this).hasClass("pop-up")) {
                 $('.popup').css('display', 'none');
                 $('body').css('overflow', 'auto');
+            } else if ($(this).hasClass("pay-more")) {
+                $('.payment-more').css('display', 'none');
+                $('body').css('overflow', 'auto');
             }
         });
     });
@@ -206,10 +229,13 @@
     });
     // popup -----------------------------------------------------------------------------------------------------------
     $(document).ready(function () {
-       $('.privacy-policy').click(function (event) {
+       $('a.pop-up').click(function (event) {
            event.preventDefault();
            $('body').css('overflow', 'hidden');
-           $('.popup').css('display', 'block');
+           if ($(this).hasClass("privacy-policy"))
+               $('.popup.priv-pol').css({'display': 'block', 'overflow': 'auto'});
+           else if ($(this).hasClass("data-processing"))
+               $('.popup.data-processing').css({'display': 'block', 'overflow': 'auto'});
        });
     });
 })(jQuery);

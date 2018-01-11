@@ -308,13 +308,32 @@ sup
 .radio
     display: none
 .radio:checked + .label:before
-    content: "\2022"
-    color: #000e20
-    font-size: 65px
-    line-height: 24px
+    content: ""
+    background: #000e20
+    width: 12px
+    height: 12px
+    top: 3px
+    left: -29px
     z-index: 2
 .radio:not(:checked) + .label:before
-    z-index: 5
+    content: ""
+    background: #000e20
+    width: 0
+    height: 0
+    z-index: 2
+
+.circle
+    content: ""
+    display: inline-block
+    width: 20px
+    height: 20px
+    position: absolute
+    left: -32px
+    background: #fff
+    border: 1px solid #e0e5ef
+    border-radius: 50%
+    box-shadow: 3px 4px 15px 1px rgba(0, 14, 32, 0.1)
+
 
 .minus, .plus
     display: inline-block
@@ -351,7 +370,7 @@ sup
     &:hover
         box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46)
 
-.payment
+.payment, .payment-more
     position: absolute
     top: 0
     right: 0
@@ -375,6 +394,9 @@ sup
             margin: 20px auto 0
         .rights
             float: none
+
+.payment-more
+    position: fixed
 
 .phone-menu
     position: absolute
@@ -787,12 +809,14 @@ sup
 
 .review-view
     list-style: none
+    height: 500px
     &__item
         float: left
         width: 555px
         margin-right: 29px
         padding: 27px 48px 30px 31px
         border: 2px solid #005dbb
+        pointer-events: none
         & p.review-title
             font-size: 17px
             font-weight: bold
@@ -1096,17 +1120,21 @@ sup
     position: fixed
     z-index: 1113
     top: 0
+    right: 0
+    left: 0
+    bottom: 0
     .container
         background: #fff
         padding: 50px 50px 30px
         margin-top: 50px
+        margin-bottom: 50px
         border: 2px solid #005dbb
         position: relative
     &__header
         text-align: center
         font-size: 31px
     &__title
-        font-size: 20px
+        font-size: 17px
         text-transform: uppercase
         padding: 10px 0
     &__text
@@ -1121,3 +1149,8 @@ sup
     right: 25px
     background: url(../img/close.png) no-repeat center center #005dbb
 // popups --------------------------------------------------------------------------------------------------------------
+
+// form ----------------------------------------------------------------------------------------------------------------
+.payment-more
+
+// form end ------------------------------------------------------------------------------------------------------------

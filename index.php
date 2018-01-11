@@ -83,10 +83,10 @@
             <div class="contact">
                 <span class="contact__workdays">9<sup>00</sup> - 21<sup>00</sup> без выходых</span>
                 <p class="contact__number">+7 (495) 236-85-40</p>
-                <a class="contact__call" href="#">Заказать звонок</a>
+                <a class="contact__call pay-more" href="#">Заказать звонок</a>
             </div>
             <div class="call">
-                <img src="img/telephone.png" alt="">
+                <img class="pay-more" src="img/telephone.png" alt="">
             </div>
             <div class="menu">
                 <span class="line"></span>
@@ -107,18 +107,18 @@
                     <div class="choice__tranparency">
                         <p class="caption ch">Прозрачность стекла:</p>
                         <input class="radio" type="radio" id="opaque" name="transparency" checked>
-                        <label class="label" for="opaque">Матовое</label>
+                        <label class="label" for="opaque"><span class="circle"></span> Матовое</label>
                         <br>
                         <input class="radio" type="radio" id="transparent" name="transparency">
-                        <label class="label" for="transparent">Прозрачное</label>
+                        <label class="label" for="transparent"><span class="circle"></span> Прозрачное</label>
                     </div>
                     <div class="choice__type">
                         <p class="caption ch">Тип стекла:</p>
                         <input class="radio" type="radio" id="usual" name="type" checked>
-                        <label class="label" for="usual">Обычное</label>
+                        <label class="label" for="usual"><span class="circle"></span> Обычное</label>
                         <br>
                         <input class="radio" type="radio" id="optiwhite" name="type">
-                        <label class="label" for="optiwhite">Optiwhite</label>
+                        <label class="label" for="optiwhite"><span class="circle"></span> Optiwhite</label>
                     </div>
                 </div>
                 <div class="area clearfix">
@@ -142,7 +142,7 @@
                         <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
                         <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
                         <input type="submit" class="btn" value="Получить расчет" name="send">
-                        <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
+                        <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
                     </form>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                             <div class="slide-info__title"><p class="price">Стоимость от</p></div>
                             <div class="slide-info__description"><p class="big-price">5 500 <span class="small-price">руб.</span></p></div>
                         </div>
-                        <button class="slide-info__btn">Хочу такое же</button>
+                        <button class="slide-info__btn pay-more">Хочу такое же</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -293,7 +293,7 @@
                             <div class="slide-info__title"><p class="price">Стоимость от</p></div>
                             <div class="slide-info__description"><p class="big-price">15 500 <span class="small-price">руб.</span></p></div>
                         </div>
-                        <button class="slide-info__btn">Хочу такое же</button>
+                        <button class="slide-info__btn pay-more">Хочу такое же</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -325,7 +325,7 @@
                             <div class="slide-info__title"><p class="price">Стоимость от</p></div>
                             <div class="slide-info__description"><p class="big-price">155 500 <span class="small-price">руб.</span></p></div>
                         </div>
-                        <button class="slide-info__btn">Хочу такое же</button>
+                        <button class="slide-info__btn pay-more">Хочу такое же</button>
                     </div>
                 </div>
             </div>
@@ -367,7 +367,7 @@
                         <span class="price-text">Стоимость:</span>
                         <span class="price-sum">14 300 <sub>руб.</sub></span>
                     </div>
-                    <button class="rates-btn">Хочу такое же</button>
+                    <button class="rates-btn pay-more">Хочу такое же</button>
                 </div>
                 <div class="rates-info__right">
                     <h3 class="rates-title">Стекло Optiwhite</h3>
@@ -389,7 +389,7 @@
                         <span class="price-text">Стоимость:</span>
                         <span class="price-sum">19 300 <sub>руб.</sub></span>
                     </div>
-                    <button class="rates-btn">Хочу такое же</button>
+                    <button class="rates-btn pay-more">Хочу такое же</button>
                 </div>
             </div>
             <div class="slider-switch">
@@ -417,7 +417,7 @@
                             <img src="img/content-bigimg1.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -427,7 +427,7 @@
                             <img src="img/content-smallimg1.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -437,7 +437,7 @@
                             <img src="img/content-smallimg2.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -449,7 +449,7 @@
                             <img src="img/content-smallimg3.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -459,7 +459,7 @@
                             <img src="img/content-smallimg4.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -469,7 +469,7 @@
                             <img src="img/content-smallimg5.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -479,7 +479,7 @@
                             <img src="img/content-smallimg6.jpg" alt="">
                             <div class="img-hover">
                                 <p>Модульные картины из стекла</p>
-                                <button class="btn">Заказать замер</button>
+                                <button class="btn pay-more">Заказать замер</button>
                             </div>
                         </div>
                     </div>
@@ -488,13 +488,13 @@
                     <div class="all-products__moreinfo">
                         <p>Хотите узнать больше? <br>
                             Оставьте заявку и мы свяжемся с вами.</p>
-                        <button class="btn">Узнать больше</button>
+                        <button class="btn pay-more">Узнать больше</button>
                     </div>
                     <div class="all-products__img right">
                         <img src="img/content-bigimg2.jpg" alt="">
                         <div class="img-hover">
                             <p>Модульные картины из стекла</p>
-                            <button class="btn">Заказать замер</button>
+                            <button class="btn pay-more">Заказать замер</button>
                         </div>
                     </div>
                 </div>
@@ -585,7 +585,7 @@
                     <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" minlength="2">
                     <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida">
                     <input type="submit" class="btn" value="Заказать бесплатный замер" name="send2">
-                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#">обработкой данных</a></p>
+                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
                 </form>
             </div>
         </div>
@@ -625,19 +625,19 @@
                 </div>
                 <div class="back-to">
                     <div class="back-to__img">
-                        <a class="scroll" href="#header">
+                        <a class="scroll" href="#">
                             <img class="footer-img" src="img/back-to-top.png" alt="">
                         </a>
                     </div>
                     <div class="back-to__text">
-                        <a href="#header">
+                        <a class="scroll" href="#">
                             <span class="text">Вверх</span>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright clearfix">
-                <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+                <a class="privacy-policy pop-up" href="#">Политика конфиденциальности</a>
                 <p class="copyright">© "Frederiko.ru" 2014 - 2017. Все права защищены.</p>
             </div>
         </div>
@@ -645,10 +645,10 @@
     <!-- footer end -->
 
     <!-- popups -->
-    <div class="popup">
+    <div class="popup priv-pol">
         <div class="container">
             <div class="close pop-up"></div>
-            <h3 class="popup__header">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+            <h3 class="popup__header">Политика Конфиденциальности</h3>
             <p class="popup__text">г.Москва</p>
             <p class="popup__text">«15» февраля 2017 г.</p>
             <p class="popup__text">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт компании «Флагман Ремонта», расположенный на доменном имени flagmanremonta.ru, может получить о Пользователе во время использования сайта, программ и продуктов компании.</p>
@@ -682,7 +682,39 @@
             </ul>
         </div>
     </div>
+    <div class="popup data-processing">
+        <div class="container">
+            <div class="close pop-up"></div>
+            <h3 class="popup__header">Согласие на обработку персональных данных</h3>
+            <p class="popup__text">г.Москва</p>
+            <p class="popup__text">«15» февраля 2017 г.</p>
+            <p class="popup__text">Этим документом я выражаю свое согласие на совершение Оператором* со всеми персональными данными, указанными мной при регистрации, а также теми, которые указаны в “Персональном кабинете”, таких действий: сбор, накопление, регистрация, хранение, изменение, обновление, использование и расширение (распространение, реализация, передача), уничтожение (дальше – Обработка).</p>
+            <p class="popup__text">Обработка персональных данных может осуществляться Оператором на бумажном и/или электронном носителях с возможным использованием смешанной обработки: автоматизированной и неавтоматизированной.</p>
+            <p class="popup__text">Целью сбора и обработки персональных данных является организация Оператором направления (отправки) на мой адрес специальных предложений, информации о новых товарах, услугах и рекламных акциях, иных действий, в рамках своей деятельности, а также выполнение Оператором своих обязательств передо мной, как покупателем товаров и/или услуг.</p>
+            <p class="popup__text">Я соглашаюсь с тем, что Оператор может передавать мои персональные данные третьим лицам, если такая передача необходима для выполнения Оператором своих обязательств передо мной, как покупателем товаров и/или услуг, а также при обработке персональных данных.</p>
+            <p class="popup__text">Я подтверждаю свое согласие со всем вышеизложенным, а также обязуюсь соблюдать правила Клубной программы, а также Пользовательского соглашения.</p>
+            <p class="popup__text">Я подтверждаю свое согласие со всем вышеизложенным, а также обязуюсь соблюдать правила Клубной программы, а также Пользовательского соглашения.</p>
+            <p class="popup__text">Оператор оставляет за собой право изменять правила Клубной программы, а также Политики конфиденциальности и Пользовательского соглашения по своему усмотрению.</p>
+        </div>
+    </div>
     <!-- popups end -->
+
+    <!-- form -->
+    <div class="payment-more">
+        <div class="container">
+            <div class="close pay-more"></div>
+            <div class="form-info">
+                <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
+                <form action="#" class="form clearfix" id="phone-form__btn" method="post">
+                    <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
+                    <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
+                    <input type="submit" class="btn" value="Заказать звонок" name="send2">
+                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>

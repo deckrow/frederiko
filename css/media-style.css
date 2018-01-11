@@ -57,7 +57,7 @@
     .home-form .btn { margin-top: 27px; padding: 16px 52px; font-size: 17px; }
 
     .payment .form-info { padding: 0 0 290px 0; text-align: center; }
-    .payment .form-info .title { font-size: 34px; padding-top: 170px; }
+    .payment .form-info .title, .payment-more .form-info .title { font-size: 34px; padding-top: 170px; }
     .form-info .form { margin-top: 21px; }
     .form-info .input { width: 282px; margin-right: 20px }
     .form-info .input.margin-none { margin-right: 0 }
@@ -266,7 +266,8 @@
 
     .title .bold { font-weight: 600 }
 
-    .payment .form-info .title { font-size: 24px; padding-top: 150px; }
+    .payment .form-info .title, .payment-more .form-info .title { font-size: 24px; padding-top: 150px; }
+    .payment-more .form-info .title { padding-top: 0 }
     .payment .form-info { padding-bottom: 144px }
     .form-info .form { margin-top: 14px; }
     .form-info .input { margin-right: 0; margin-bottom: 10px; }
@@ -335,6 +336,11 @@
 
     .privacy-policy { bottom: 45px }
 
+    .popup .container { padding: 30px }
+    .popup__header { font-size: 23px }
+    .popup__text { font-size: 15px }
+    .close.pop-up { top: 15px; right: 15px }
+
     .success { padding: 70px 15px 0; }
 
     .success-info .title, .success-info .gold { font-size: 24px }
@@ -345,7 +351,7 @@
     .success-footer .copyright-info { padding-top: 0 }
     .success-footer .privacy-policy { padding-bottom: 0; bottom: 55px }
     .success-footer .copyright { text-align: left }
-
+    .success-footer { border-bottom: none }
 }
 
 @media screen and (max-width: 320px) {
