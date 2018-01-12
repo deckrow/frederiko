@@ -198,7 +198,7 @@
                 sum += 5800;
             }
             sum *= metr;
-            sessvars.money = {price: sum + "руб."};
+            sessvars.money = {price: Math.round(sum) + "руб."};
         });
         $('.close').click(function () {
             if ($(this).hasClass("pay")) {
