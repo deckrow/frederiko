@@ -250,7 +250,7 @@ sup { font-size: 8px; }
 .reviews-slide::-webkit-scrollbar-thumb { width: 500px; }
 
 /*@-moz-document url-prefix() .reviews-slide margin-bottom: 35px */
-.review-view { list-style: none; height: 529px; }
+.review-view { list-style: none; display: flex; }
 .review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; pointer-events: none; }
 .review-view__item p.review-title { font-size: 17px; font-weight: bold; padding-bottom: 8px; }
 .review-view__item p.review-text { font-size: 17px; line-height: 22px; }
@@ -262,7 +262,7 @@ sup { font-size: 8px; }
 .reviews-hand__img { padding-right: 8px; }
 .reviews-hand__text { font-size: 16px; color: #005dbb; line-height: 46px; }
 
-.hide-text { display: none; position: absolute; bottom: 10px; cursor: pointer; font-size: 15px; font-weight: 600; color: #fcc936; border: none; background: #fff; z-index: 4; }
+.hide-text { display: none; position: absolute; bottom: 10px; cursor: pointer; font-size: 15px; font-weight: 600; color: #fcc936; border: none; background: #fff; z-index: 4; pointer-events: all; }
 .hide-text:before { content: url("../img/gold-plus.png"); position: relative; top: 2px; margin-right: 10px; }
 
 .white-grain-big-left, .white-grain-big-right { position: absolute; top: 0; bottom: 0; width: 200px; z-index: 111; }

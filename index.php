@@ -566,6 +566,7 @@
                     <button class="hide-text">Развернуть отзыв</button>
                 </li>
             </ul>
+
         </div>
         <div class="white-grain-big-right"></div>
         <div class="container">

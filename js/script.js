@@ -92,7 +92,7 @@
         if ($(window).width() <= 420) {
             var textBlock = $('.hide'),
                 btn       = $('.review-view__item .hide-text'),
-                textHeight  = textBlock.innerHeight() + 20;
+                textHeight  = textBlock.innerHeight();
             textBlock.css('height', 350 + 'px');
             $(btn).click(function () {
                 if ($(this).siblings('.hide').innerHeight() === 350) {
