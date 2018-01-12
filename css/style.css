@@ -133,6 +133,7 @@ sup { font-size: 8px; }
 .meter { position: absolute; top: calc(50% - 8px); left: calc(50% + 10px); font-weight: 500; font-size: 16px; pointer-events: none; }
 .meter sub { font-size: 10px; }
 
+@-moz-document url-prefix() { .meter { top: calc(50% - 9px); } }
 .close { position: absolute; top: 130px; right: 190px; border: 2px solid #fff; height: 40px; width: 40px; cursor: pointer; background: url("../img/close.png") no-repeat center center; }
 
 .advantages .big-title { padding-bottom: 56px; }
@@ -249,8 +250,8 @@ sup { font-size: 8px; }
 .reviews-slide::-webkit-scrollbar-thumb { width: 500px; }
 
 /*@-moz-document url-prefix() .reviews-slide margin-bottom: 35px */
-.review-view { list-style: none; }
-.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; }
+.review-view { list-style: none; height: 529px; }
+.review-view__item { float: left; width: 555px; margin-right: 29px; padding: 27px 48px 30px 31px; border: 2px solid #005dbb; pointer-events: none; }
 .review-view__item p.review-title { font-size: 17px; font-weight: bold; padding-bottom: 8px; }
 .review-view__item p.review-text { font-size: 17px; line-height: 22px; }
 .review-view__item:last-child { margin-right: 0; }

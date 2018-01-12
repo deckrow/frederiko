@@ -1,10 +1,25 @@
 var dragParams;
 window.addEventListener('load', init_myscroll);
 function bardrag_mousemove(e) {
-    var pos = (e.clientX - dragParams.clientX) + dragParams.offsetLeft;
-    pos = Math.min(Math.max(0, pos), dragParams.maxLeft);
-    dragParams.slider.style.left = pos + 'px';
-    updateScrollPosition(dragParams.slider, pos);
+    var pos;
+    if (dragParams.slider.className === 'slider') {
+        pos = (e.clientX - dragParams.clientX) + dragParams.offsetLeft;
+        pos = Math.min(Math.max(0, pos), dragParams.maxLeft);
+        dragParams.slider.style.left = pos + 'px';
+        updateScrollPosition(dragParams.slider, pos);
+    } else if (dragParams.slider.className === 'review-view') {
+        var myscroll = dragParams.slider.parentNode;
+        var bar = myscroll.lastChild;
+        var slider = bar.lastChild;
+        pos = ((e.clientX - dragParams.clientX) + dragParams.offsetLeft) * -1;
+        if(pos < 0) {
+            pos = 0;
+        } else if (pos > dragParams.maxLeft) {
+            pos = dragParams.maxLeft;
+        }
+        slider.style.left = pos + 'px';
+        updateScrollPosition(dragParams.slider, pos);
+    }
 }
 function scrollLeft() {
     var width = window.innerWidth;
@@ -32,27 +47,54 @@ function scrollWidth() {
         return (width - 30) + 'px';
 }
 function updateScrollPosition(slider, offsetVal) {
-    var bar = slider.parentNode;
-    var myscroll = bar.parentNode;
-    var maxView = myscroll.scrollWidth - myscroll.offsetWidth;
-    var maxSlide = bar.offsetWidth - slider.offsetWidth;
-    var viewX = maxView * offsetVal / maxSlide;
-    myscroll.scrollLeft = viewX;
-    bar.style.left = viewX + scrollLeft() + 'px';
-    bar.style.width = scrollWidth();
+    var bar, myscroll, maxView, maxSlide, viewX, sliderbar;
+    if (slider.className === 'slider') {
+        bar = slider.parentNode;
+        myscroll = bar.parentNode;
+        maxView = myscroll.scrollWidth - myscroll.offsetWidth;
+        maxSlide = bar.offsetWidth - slider.offsetWidth;
+        viewX = maxView * offsetVal / maxSlide;
+        myscroll.scrollLeft = viewX;
+        bar.style.left = viewX + scrollLeft() + 'px';
+        bar.style.width = scrollWidth();
+    } else if (slider.className === 'review-view') {
+        myscroll = slider.parentNode;
+        bar = myscroll.lastChild;
+        sliderbar = bar.lastChild;
+        maxView = myscroll.scrollWidth - myscroll.offsetWidth;
+        maxSlide = bar.offsetWidth - sliderbar.offsetWidth;
+        viewX = maxView * offsetVal / maxSlide;
+        myscroll.scrollLeft = viewX;
+        bar.style.left = viewX + scrollLeft() + 'px';
+        bar.style.width = scrollWidth();
+    }
 }
 function drag_start(e) {
     var slider = e.target;
-    console.log(e.target);
+    var myscroll = slider.parentNode;
+    var bar = myscroll.lastChild;
+    var sliderBar = bar.lastChild;
     var maxLeft = slider.parentNode.offsetWidth - slider.offsetWidth;
-    dragParams = {
-        clientX: e.clientX,
-        offsetLeft: slider.offsetLeft,
-        slider: e.target,
-        maxLeft: maxLeft
-    };
-    e.preventDefault();
-    document.addEventListener('mousemove', bardrag_mousemove);
+    if (slider.className === 'slider') {
+        dragParams = {
+            clientX: e.clientX,
+            offsetLeft: slider.offsetLeft,
+            slider: e.target,
+            maxLeft: maxLeft
+        };
+        e.preventDefault();
+        document.addEventListener('mousemove', bardrag_mousemove);
+    } else if (slider.className === 'review-view') {
+        var maxLeft = bar.offsetWidth - sliderBar.offsetWidth;
+        dragParams = {
+            clientX: e.clientX,
+            offsetLeft: -bar.lastChild.offsetLeft,
+            slider: e.target,
+            maxLeft: Math.abs(maxLeft)
+        };
+        e.preventDefault();
+        document.addEventListener('mousemove', bardrag_mousemove);
+    }
 }
 function drag_end(e) {
     e.stopPropagation();
@@ -90,15 +132,15 @@ function addScroller(isX, myscroll) {
     var scrollDim = isX ? myscroll.scrollWidth : myscroll.scrollHeight;
     var sliderPx = Math.max(30, (offsetDim * offsetDim / scrollDim));
     slider.style.width = 100 * sliderPx / offsetDim + '%';
-    slider.className = 'slider slider-review';
+    slider.className = 'slider';
     bar.className = isX ? 'h bar' : 'v bar';
     bar.style.left = scrollLeft() + 'px';
     bar.style.width = scrollWidth();
     bar.appendChild(slider);
     bar.addEventListener('click', bar_clicked);
     myscroll.appendChild(bar);
-    /*myscroll.addEventListener('mousedown', drag_start);
-    myscroll.addEventListener('mouseup', drag_end);*/
+    myscroll.addEventListener('mousedown', drag_start);
+    myscroll.addEventListener('mouseup', drag_end);
     slider.addEventListener('mousedown', drag_start);
     slider.addEventListener('mouseup', drag_end);
     bar.addEventListener('mouseup', drag_end);

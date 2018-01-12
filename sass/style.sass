@@ -449,6 +449,10 @@ sup
     sub
         font-size: 10px
 
+@-moz-document url-prefix()
+    .meter
+        top: calc(50% - 9px)
+
 .close
     position: absolute
     top: 130px
@@ -809,12 +813,14 @@ sup
 
 .review-view
     list-style: none
+    height: 529px
     &__item
         float: left
         width: 555px
         margin-right: 29px
         padding: 27px 48px 30px 31px
         border: 2px solid #005dbb
+        pointer-events: none
         & p.review-title
             font-size: 17px
             font-weight: bold
@@ -1149,6 +1155,6 @@ sup
 // popups --------------------------------------------------------------------------------------------------------------
 
 // form ----------------------------------------------------------------------------------------------------------------
-.payment-more
+
 
 // form end ------------------------------------------------------------------------------------------------------------

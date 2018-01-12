@@ -612,7 +612,7 @@
                     <div class="address__text">
                         <span class="text">г.Москва БЦ "Вега" <br> (ул. Вербная, д.8с1, оф.207)</span>
                         <br>
-                        <a class="link" href="mailto:maft.den@gmail.com">info@frederiko.ru</a>
+                        <a class="link" href="mailto:a.semenova@remontexpress.ru">info@frederiko.ru</a>
                     </div>
                 </address>
                 <div class="work-hours clearfix">
