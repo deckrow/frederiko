@@ -178,7 +178,7 @@
         $('.menu').click(function () {
            $('.phone-menu').css('display', 'block');
         });
-        $('.pay-more').click(function () {
+        $('.pay-more').click(function (event) {
             event.preventDefault();
             $('body').css('overflow', 'hidden');
             $('.payment-more').css({'display': 'block', 'overflow': 'auto'});
