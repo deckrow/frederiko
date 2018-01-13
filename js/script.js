@@ -226,6 +226,29 @@
             }
             return false;
         });
+        $(window).scroll(function(){
+            var h = $(window).height() / 2;
+            if (($(this).scrollTop()) === 0) {
+                $('.nav__item').removeClass('active');
+                $("a.nav__link[href$='#']").parent().addClass('active');
+            }
+            if (($(this).scrollTop() + h) >= $("#advantages").offset().top) {
+                $('.nav__item').removeClass('active');
+                $("a.nav__link[href='#advantages']").parent().addClass('active');
+            }
+            if (($(this).scrollTop() + h) >= $("#works").offset().top) {
+                $('.nav__item').removeClass('active');
+                $("a.nav__link[href='#works']").parent().addClass('active');
+            }
+            if (($(this).scrollTop() + h) >= $("#rates").offset().top) {
+                $('.nav__item').removeClass('active');
+                $("a.nav__link[href='#rates']").parent().addClass('active');
+            }
+            if (($(this).scrollTop() + h) >= $("#reviews").offset().top) {
+                $('.nav__item').removeClass('active');
+                $("a.nav__link[href='#reviews']").parent().addClass('active');
+            }
+        });
     });
     // popup -----------------------------------------------------------------------------------------------------------
     $(document).ready(function () {
