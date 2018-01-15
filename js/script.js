@@ -206,6 +206,7 @@
         $('.close').click(function () {
             if ($(this).hasClass("pay")) {
                 $('.payment').css('display', 'none');
+                $('body').css('overflow', 'auto');
             } else if ($(this).hasClass("phone")) {
                 $('.phone-menu').css('display', 'none');
             } else if ($(this).hasClass("pop-up")) {

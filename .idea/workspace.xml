@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71c85638-9e00-4efd-8800-ebc33f66d252" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/55aa2facc0a3cf9ba50d9e096050a0b0477462ff/style.sassc" afterPath="$PROJECT_DIR$/.sass-cache/55aa2facc0a3cf9ba50d9e096050a0b0477462ff/style.sassc" />
-      <change beforePath="$PROJECT_DIR$/css/media-style.css" afterPath="$PROJECT_DIR$/css/media-style.css" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/sass/style.sass" afterPath="$PROJECT_DIR$/sass/style.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,8 +51,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="224" column="35" lean-forward="true" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+            <state relative-caret-position="562">
+              <caret line="208" column="50" lean-forward="false" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="50" />
               <folding>
                 <element signature="e#170#421#0" expanded="false" />
                 <element signature="e#579#1095#0" expanded="false" />
@@ -67,8 +61,7 @@
                 <element signature="e#3127#4841#0" expanded="false" />
                 <element signature="e#4999#5615#0" expanded="false" />
                 <element signature="e#5773#7374#0" expanded="false" />
-                <element signature="e#7532#9151#0" expanded="false" />
-                <element signature="e#12003#12431#0" expanded="false" />
+                <element signature="e#12054#12482#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -155,8 +148,8 @@
         <option value="$PROJECT_DIR$/js/mask.js" />
         <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/media-style.css" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -304,12 +297,12 @@
       <workItem from="1515875453873" duration="78000" />
       <workItem from="1515923343168" duration="1250000" />
       <workItem from="1515934182411" duration="388000" />
-      <workItem from="1516005897446" duration="6142000" />
+      <workItem from="1516005897446" duration="6551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344512000" />
+    <option name="totallyTimeSpent" value="344921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="238" y="166" width="1920" height="1053" extended-state="6" />
@@ -421,8 +414,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -469,8 +461,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -517,8 +508,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -565,8 +555,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,8 +602,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,8 +649,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -739,8 +726,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="224" column="35" lean-forward="true" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+        <state relative-caret-position="562">
+          <caret line="208" column="50" lean-forward="false" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="50" />
           <folding>
             <element signature="e#170#421#0" expanded="false" />
             <element signature="e#579#1095#0" expanded="false" />
@@ -955,8 +941,7 @@
             <element signature="e#3127#4841#0" expanded="false" />
             <element signature="e#4999#5615#0" expanded="false" />
             <element signature="e#5773#7374#0" expanded="false" />
-            <element signature="e#7532#9151#0" expanded="false" />
-            <element signature="e#12003#12431#0" expanded="false" />
+            <element signature="e#12054#12482#0" expanded="false" />
           </folding>
         </state>
       </provider>
