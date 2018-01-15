@@ -109,7 +109,7 @@ sup { font-size: 8px; }
 .btn { padding: 16px 42px; border-radius: 25px; background-color: #fcc936; font-size: 18px; color: #000e20; border: none; margin: 30px auto 0; display: block; cursor: pointer; }
 .btn:hover { box-shadow: 3px 5px 15px 1px rgba(252, 201, 54, 0.46); }
 
-.payment, .payment-more { position: absolute; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; z-index: 1112; display: none; }
+.payment, .payment-more { position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; z-index: 1112; display: none; }
 .payment .container, .payment-more .container { position: relative; }
 .payment .form-info, .payment-more .form-info { text-align: center; padding-top: 125px; }
 .payment .form-info .title, .payment-more .form-info .title { padding-top: 100px; font-size: 35px; }
@@ -117,9 +117,7 @@ sup { font-size: 8px; }
 .payment .form-info .btn, .payment-more .form-info .btn { display: block; margin: 20px auto 0; }
 .payment .form-info .rights, .payment-more .form-info .rights { float: none; }
 
-.payment-more { position: fixed; }
-
-.phone-menu { position: absolute; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; display: none; z-index: 1112; }
+.phone-menu { position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: #005dbb; display: none; z-index: 1112; }
 .phone-menu .container { position: relative; }
 .phone-menu .menu-list { list-style: none; padding: 89px 25px 0; }
 .phone-menu .menu-list__item { border-bottom: 1px solid #0082d6; }

@@ -125,39 +125,12 @@
                     <span class="caption">Площадь душевой кабины:</span>
                     <div class="area__input clearfix">
                         <span class="minus"></span>
-                        <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000" pattern="\d+[м]?|\d+\.\d+[м]?">
+                        <input class="inp" type="number" name="met" value="1" step="0.1" min="1" max="10000">
                         <p class="meter">м<sub>2</sub></p>
                         <span class="plus"></span>
                     </div>
                 </div>
                 <a href="#" class="btn" >Рассчитать</a>
-            </div>
-        </div>
-        <div class="payment">
-            <div class="container">
-                <div class="close pay"></div>
-                <div class="form-info">
-                    <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
-                    <form action="#" class="form clearfix" id="phone-form__main" method="post">
-                        <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
-                        <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
-                        <input type="submit" class="btn" value="Получить расчет" name="send">
-                        <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="phone-menu">
-            <div class="container">
-                <div class="close phone"></div>
-                <ul class="menu-list">
-                    <li class="menu-list__item active"><a href="#" class="menu-list__link scroll">Калькулятор</a></li>
-                    <li class="menu-list__item"><a href="#advantages" class="menu-list__link scroll">Преимущества</a></li>
-                    <li class="menu-list__item"><a href="#rates" class="menu-list__link scroll">Тарифы</a></li>
-                    <li class="menu-list__item"><a href="#works" class="menu-list__link scroll">Наши работы</a></li>
-                    <li class="menu-list__item"><a href="#reviews" class="menu-list__link scroll">Отзывы</a></li>
-                    <li class="menu-list__item"><a href="#footer" class="menu-list__link scroll">Контакты</a></li>
-                </ul>
             </div>
         </div>
     </div>
@@ -584,7 +557,7 @@
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
                 <form action="#" class="form clearfix" id="phone-form__footer" method="post">
                     <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" minlength="2">
-                    <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida">
+                    <input type="text" class="input margin-none phone" placeholder="Введите ваш телефон" name="telefon_lida">
                     <input type="submit" class="btn" value="Заказать бесплатный замер" name="send2">
                     <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
                 </form>
@@ -701,6 +674,20 @@
     <!-- popups end -->
 
     <!-- form -->
+    <div class="payment">
+        <div class="container">
+            <div class="close pay"></div>
+            <div class="form-info">
+                <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
+                <form action="#" class="form clearfix" id="phone-form__main" method="post">
+                    <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
+                    <input type="text" class="input margin-none phone" placeholder="Введите ваш телефон" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
+                    <input type="submit" class="btn" value="Получить расчет" name="send">
+                    <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="payment-more">
         <div class="container">
             <div class="close pay-more"></div>
@@ -708,11 +695,24 @@
                 <h3 class="title">Узнайте сколько будет стоить стекло <br> для вашей ванной</h3>
                 <form action="#" class="form clearfix" id="phone-form__btn" method="post">
                     <input type="text" class="input" placeholder="Введите ваше имя" name="ima_kl" value="<?php echo $_SESSION["ima_kl"] ?>">
-                    <input type="text" class="input margin-none" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
+                    <input type="text" class="input margin-none phone" placeholder="Введите ваш телефон" name="telefon_lida" value="<?php echo $_SESSION["telefon_lida"] ?>">
                     <input type="submit" class="btn" value="Заказать звонок" name="send2">
                     <p class="rights">Отправляя заявку вы соглашаетесь с <a href="#" class="data-processing pop-up">обработкой данных</a></p>
                 </form>
             </div>
+        </div>
+    </div>
+    <div class="phone-menu">
+        <div class="container">
+            <div class="close phone"></div>
+            <ul class="menu-list">
+                <li class="menu-list__item active"><a href="#" class="menu-list__link scroll">Калькулятор</a></li>
+                <li class="menu-list__item"><a href="#advantages" class="menu-list__link scroll">Преимущества</a></li>
+                <li class="menu-list__item"><a href="#rates" class="menu-list__link scroll">Тарифы</a></li>
+                <li class="menu-list__item"><a href="#works" class="menu-list__link scroll">Наши работы</a></li>
+                <li class="menu-list__item"><a href="#reviews" class="menu-list__link scroll">Отзывы</a></li>
+                <li class="menu-list__item"><a href="#footer" class="menu-list__link scroll">Контакты</a></li>
+            </ul>
         </div>
     </div>
     <!-- form end -->
@@ -721,6 +721,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/messages_ru.js"></script>
+    <script src="js/mask.js"></script>
     <script src="js/myscroll.js"></script>
     <script src="js/sessvars.js"></script>
     <script src="js/script.js"></script>

@@ -123,6 +123,8 @@
     });
     // validation ------------------------------------------------------------------------------------------------------
     $(document).ready(function () {
+        $(".phone").mask("+7(999)999-99-99");
+
         $('#phone-form__footer').validate({
             rules: {
                 ima_kl: {
@@ -170,7 +172,7 @@
             }
         });
         jQuery.validator.addMethod("phoneNumber", function (value, element) {
-            return this.optional(element) || /^[0-6,9]\d{9}$/.test(value);
+            return this.optional(element) || /^\+[7]\([0-6,9]\d{2}\)\d{3}-\d{2}-\d{2}$/.test(value);
         }, "Неверный формат телефона");
     });
     // click -----------------------------------------------------------------------------------------------------------
@@ -184,6 +186,7 @@
             $('.payment-more').css({'display': 'block', 'overflow': 'auto'});
         });
         $('.home-form .btn').click(function () {
+            $('body').css('overflow', 'hidden');
             $('.payment').css('display', 'block');
             var metr = $('.home-form .area__input .inp').val(),
                 sum = 0;
@@ -230,23 +233,37 @@
             var h = $(window).height() / 2;
             if (($(this).scrollTop()) === 0) {
                 $('.nav__item').removeClass('active');
+                $('.menu-list__item').removeClass('active');
                 $("a.nav__link[href$='#']").parent().addClass('active');
+                $("a.menu-list__link[href='#']").parent().addClass('active');
             }
             if (($(this).scrollTop() + h) >= $("#advantages").offset().top) {
                 $('.nav__item').removeClass('active');
+                $('.menu-list__item').removeClass('active');
                 $("a.nav__link[href='#advantages']").parent().addClass('active');
+                $("a.menu-list__link[href='#advantages']").parent().addClass('active');
             }
             if (($(this).scrollTop() + h) >= $("#works").offset().top) {
                 $('.nav__item').removeClass('active');
+                $('.menu-list__item').removeClass('active');
                 $("a.nav__link[href='#works']").parent().addClass('active');
+                $("a.menu-list__link[href='#works']").parent().addClass('active');
             }
             if (($(this).scrollTop() + h) >= $("#rates").offset().top) {
                 $('.nav__item').removeClass('active');
+                $('.menu-list__item').removeClass('active');
                 $("a.nav__link[href='#rates']").parent().addClass('active');
+                $("a.menu-list__link[href='#rates']").parent().addClass('active');
             }
             if (($(this).scrollTop() + h) >= $("#reviews").offset().top) {
                 $('.nav__item').removeClass('active');
+                $('.menu-list__item').removeClass('active');
                 $("a.nav__link[href='#reviews']").parent().addClass('active');
+                $("a.menu-list__link[href='#reviews']").parent().addClass('active');
+            }
+            if (($(this).scrollTop() + h) >= $("#footer").offset().top) {
+                $('.menu-list__item').removeClass('active');
+                $("a.menu-list__link[href='#footer']").parent().addClass('active');
             }
         });
     });
